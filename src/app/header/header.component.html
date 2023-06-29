@@ -1,12 +1,14 @@
 <div class="header-container">
-  <div>
-    <div><img src="" alt="" /></div>
-    <div>
+  <div class="logo-p-header-container">
+    <img src="./assets/logo/logowotxt.png" alt="logo du site" />
+    <div class="p-header">
       <P>Céline Moreira</P>
       <P>L'art de la réflexologie plantaire</P>
       <P>Practicienne en réflexologie vectorielle,</P>
       <P>certifiée palmaire & plantaire</P>
     </div>
   </div>
-  <div (click)="burgerToggle()"><i [ngClass]="burgerVisible ? 'fa-solid fa-bars' : 'fa-solid fa-xmark'"></i></div>
+  <div (click)="burgerToggle()">
+    <i [ngClass]="burgerVisible ? 'fa-solid fa-bars' : 'fa-solid fa-xmark'"></i>
+  </div>
 </div>
