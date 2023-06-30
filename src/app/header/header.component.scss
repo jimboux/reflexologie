@@ -2,27 +2,30 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 15vh;
+  height: 10vh;
   background-color: #2da080;
   font-family: "Poppins";
 }
 .logo-p-header-container {
   display: flex;
   align-items: center;
+  
 }
 img {
-  height: 15vh;
+  height: 10vh;
   object-fit: contain;
 }
-.p-header {
-  display: none;
-}
+
 i {
   font-size: x-large;
   margin-right: 5vw;
 }
 .name {
-  font-size: 2em;
+  font-size: 1.6em;
+  display: block;
+}
+.p1 {
+  display: block;
 }
 
 .list {
@@ -31,18 +34,23 @@ i {
   margin-right: 3%;
   gap: 3%;
 }
-.p1,
-  .p3, .p2 {
+.p3, .p2 {
     margin-left: 20px;
     margin-top: 10px;
+    display: none;
   }
   
 
 //////////////////////////////MEDIA QUERY//////////////////////////////////
 
 @media screen and (min-width: 600px) {
-  .p-header {
+  .p1, .p3, .p2 {
+    margin-left: 20px;
+    margin-top: 10px;
     display: block;
+  }
+  .header-container, img {
+    height: 15vh;
   }
 }
 @media screen and (min-width: 1200px) {
