@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+$main-color: #2DA080;
+
+img {
+  object-fit: contain;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  cursor: default;
+}
