@@ -7,6 +7,7 @@ import { ReflexologieComponent } from './pages/reflexologie/reflexologie.compone
 import { AproposComponent } from './pages/apropos/apropos.component';
 import { SeancesComponent } from './pages/seances/seances.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { ConfidentialPoliticComponent } from './pages/confidential-politic/confidential-politic.component';
 
 const routes: Routes = [
   { path: 'mentions-legales', component: LegalmentionsComponent},
@@ -16,6 +17,9 @@ const routes: Routes = [
   { path: 'a-propos', component: AproposComponent},
   { path: 'seances', component: SeancesComponent},
   { path: 'contact', component: ContactComponent},
+  { path: 'politique-confidentialite', component: ConfidentialPoliticComponent},
+
+  
 ];
 
 @NgModule({
