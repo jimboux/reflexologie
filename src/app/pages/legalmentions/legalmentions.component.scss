@@ -1,6 +1,4 @@
-.mentions-legales-container{
-  padding: var(--padding-mobile);
-}
+
 h2{
  display: flex;
  text-align: center;
@@ -19,12 +17,6 @@ h5{
 //////////////////////////////MEDIA QUERY//////////////////////////////////
 
 @media screen and (min-width: 600px) {
-  .mentions-legales-container{
-    padding: var(--padding-tablet);
-  }
 }
 @media screen and (min-width: 1200px) {
-  .mentions-legales-container{
-    padding: var(--padding-pc);
-  }
 }

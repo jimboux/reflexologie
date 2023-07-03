@@ -1,9 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
-$main-color: #2DA080;
-:root{
+$main-color: #2da080;
+:root {
   --padding-mobile: 0 5vw 20vh 5vw;
   --padding-tablet: 0 5vw 25vh 5vw;
   --padding-pc: 0 3vw 30vh 3vw;
+  --main-color: #2da080;
 }
 img {
   object-fit: contain;
@@ -17,4 +18,27 @@ img {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   cursor: default;
+}
+
+.confidential-politic-container,
+.page-404-container,
+.mentions-legales-container {
+  padding: var(--padding-mobile);
+}
+
+//////////////////////////////MEDIA QUERY//////////////////////////////////
+
+@media screen and (min-width: 600px) {
+  .confidential-politic-container,
+  .page-404-container,
+  .mentions-legales-container {
+    padding: var(--padding-tablet);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .confidential-politic-container,
+  .page-404-container,
+  .mentions-legales-container {
+    padding: var(--padding-pc);
+  }
 }
