@@ -12,6 +12,8 @@ import { SeancesComponent } from './pages/seances/seances.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { CguComponent } from './pages/cgu/cgu.component';
 import { LegalmentionsComponent } from './pages/legalmentions/legalmentions.component';
+import { ConfidentialPoliticComponent } from './pages/confidential-politic/confidential-politic.component';
+import { Page404Component } from './pages/page404/page404.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +26,9 @@ import { LegalmentionsComponent } from './pages/legalmentions/legalmentions.comp
     SeancesComponent,
     ContactComponent,
     CguComponent,
-    LegalmentionsComponent
+    LegalmentionsComponent,
+    ConfidentialPoliticComponent,
+    Page404Component
   ],
   imports: [
     BrowserModule,

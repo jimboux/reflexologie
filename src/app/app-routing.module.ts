@@ -7,15 +7,20 @@ import { ReflexologieComponent } from './pages/reflexologie/reflexologie.compone
 import { AproposComponent } from './pages/apropos/apropos.component';
 import { SeancesComponent } from './pages/seances/seances.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { ConfidentialPoliticComponent } from './pages/confidential-politic/confidential-politic.component';
+import { Page404Component } from './pages/page404/page404.component';
 
 const routes: Routes = [
+  { path: '', component: AccueilComponent},
+  { path: 'accueil', component: AccueilComponent},
   { path: 'mentions-legales', component: LegalmentionsComponent},
   { path: 'CGU', component: CguComponent},
-  { path: 'accueil', component: AccueilComponent},
   { path: 'reflexologie', component: ReflexologieComponent},
   { path: 'a-propos', component: AproposComponent},
   { path: 'seances', component: SeancesComponent},
   { path: 'contact', component: ContactComponent},
+  { path: 'politique-confidentialite', component: ConfidentialPoliticComponent},
+  { path: '**', component: Page404Component},
 ];
 
 @NgModule({
