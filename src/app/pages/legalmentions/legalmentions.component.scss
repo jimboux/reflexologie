@@ -1,11 +1,17 @@
 .mentions-legales-container{
-  padding-bottom: var(--padding-mobile);
+  padding: var(--padding-mobile);
 }
 h2{
  display: flex;
  text-align: center;
  justify-content: center;
- margin: 20px;
+ margin: 30px;
+ font-size: 2rem;
+
+}
+h5{
+  font-size: 1.2rem;
+  margin: 30px 0 3px 0;
 }
 
 
@@ -14,11 +20,11 @@ h2{
 
 @media screen and (min-width: 600px) {
   .mentions-legales-container{
-    padding-bottom: var(--padding-tablet);
+    padding: var(--padding-tablet);
   }
 }
 @media screen and (min-width: 1200px) {
   .mentions-legales-container{
-    padding-bottom: var(--padding-pc);
+    padding: var(--padding-pc);
   }
 }
