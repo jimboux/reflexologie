@@ -1,4 +1,4 @@
-<div class="header-container">
+<header class="header-container">
   <div class="logo-p-header-container">
     <img src="./assets/logo/logowotxt.png" alt="logo du site" />
     <div class="p-header">
@@ -8,16 +8,14 @@
       <P class="p3">certifiée palmaire & plantaire</P>
     </div>
   </div>
-  <ul class="list">
-    <li>Accueil</li>
-    <li>
-      La réflexologie
-    </li>
-    <li>A propos</li>
-    <li>Séances</li>
-    <li>Contact</li>
-  </ul>
+  <nav [ngClass]="burgerVisible ? 'visible invisible' : 'visible'">
+      <div>Accueil</div>
+      <div>La réflexologie</div>
+      <div>A propos</div>
+      <div>Séances</div>
+      <div>Contact</div>
+  </nav>
   <div class="burger-icone-container" (click)="burgerToggle()">
     <i [ngClass]="burgerVisible ? 'fa-solid fa-bars' : 'fa-solid fa-xmark'"></i>
   </div>
-</div>
+</header>
