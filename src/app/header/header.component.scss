@@ -9,7 +9,7 @@
 .logo-p-header-container {
   display: flex;
   align-items: center;
-  
+  z-index: 1;
 }
 img {
   height: 10vh;
@@ -24,24 +24,39 @@ i {
   font-size: 1.4em;
   display: block;
 }
+.burger-icone-container{
+  z-index: 1;
+}
 .p1 {
   display: block;
   font-size: 0.8em;
 }
-
-.list {
-  display: none;
+nav div{
+  cursor: pointer;
+}
+.visible {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 50vw;
+  height: 84vh;
+  background-color:#2da080; 
+  transition: right 1s;
   font-size: 1.5em;
-  margin-right: 3%;
-  gap: 3%;
+  align-items: center;
+  justify-content: space-evenly;
+  padding-top: 10vh;
+}
+.invisible{
+  right: -55vw;
 }
 .p3, .p2 {
     margin-left: 20px;
     margin-top: 10px;
     display: none;
   }
-  
-
 //////////////////////////////MEDIA QUERY//////////////////////////////////
 
 @media screen and (min-width: 600px) {
@@ -55,15 +70,27 @@ i {
   .header-container, img {
     height: 15vh;
   }
+  .visible{
+    height: 79vh;
+    padding-top: 15vh;
+  }
+
+
 }
 @media screen and (min-width: 1200px) {
   .burger-icone-container {
     display: none;
   }
-  .list {
+  .visible {
     display: flex;
+    flex-direction: row;
+    position: static;
+    margin-right: 3%;
+    gap: 3%;
+    z-index: 1;
     width: 50%;
-    justify-content: space-between;
+    height: auto;
+    padding-top: 0;
   }
   
 }

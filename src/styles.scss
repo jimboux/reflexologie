@@ -1,6 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 $main-color: #2DA080;
-
+:root{
+  --padding-mobile: 0 5vw 20vh 5vw;
+  --padding-tablet: 0 5vw 25vh 5vw;
+  --padding-pc: 0 3vw 30vh 3vw;
+}
 img {
   object-fit: contain;
 }

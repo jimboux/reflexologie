@@ -10,6 +10,8 @@ import { ReflexologieComponent } from './pages/reflexologie/reflexologie.compone
 import { AproposComponent } from './pages/apropos/apropos.component';
 import { SeancesComponent } from './pages/seances/seances.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { CguComponent } from './pages/cgu/cgu.component';
+import { LegalmentionsComponent } from './pages/legalmentions/legalmentions.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { ContactComponent } from './pages/contact/contact.component';
     ReflexologieComponent,
     AproposComponent,
     SeancesComponent,
-    ContactComponent
+    ContactComponent,
+    CguComponent,
+    LegalmentionsComponent
   ],
   imports: [
     BrowserModule,

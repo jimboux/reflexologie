@@ -1,6 +1,6 @@
-<div class="header-container">
+<header class="header-container">
   <div class="logo-p-header-container">
-    <img src="./assets/logo/logowotxt.png" alt="logo du site" />
+    <img [routerLink]="['accueil']" src="./assets/logo/logowotxt.png" alt="logo du site" />
     <div class="p-header">
       <P class="name">Céline Moreira</P>
       <P class="p1">L'art de la réflexologie plantaire</P>
@@ -8,16 +8,14 @@
       <P class="p3">certifiée palmaire & plantaire</P>
     </div>
   </div>
-  <ul class="list">
-    <li>Accueil</li>
-    <li>
-      La réflexologie
-    </li>
-    <li>A propos</li>
-    <li>Séances</li>
-    <li>Contact</li>
-  </ul>
+  <nav (click)="burgerToggle()" [ngClass]="burgerVisible ? 'visible invisible' : 'visible'">
+      <div [routerLink]="['accueil']">Accueil</div>
+      <div [routerLink]="['reflexologie']">La réflexologie</div>
+      <div [routerLink]="['a-propos']">A propos</div>
+      <div [routerLink]="['seances']">Séances</div>
+      <div [routerLink]="['contact']">Contact</div>
+  </nav>
   <div class="burger-icone-container" (click)="burgerToggle()">
     <i [ngClass]="burgerVisible ? 'fa-solid fa-bars' : 'fa-solid fa-xmark'"></i>
   </div>
-</div>
+</header>
