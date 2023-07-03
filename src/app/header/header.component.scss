@@ -31,7 +31,9 @@ i {
   display: block;
   font-size: 0.8em;
 }
-
+nav div{
+  cursor: pointer;
+}
 .visible {
   display: flex;
   flex-direction: column;

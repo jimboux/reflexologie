@@ -1,6 +1,24 @@
+.mentions-legales-container{
+  padding-bottom: var(--padding-mobile);
+}
 h2{
  display: flex;
  text-align: center;
  justify-content: center;
  margin: 20px;
+}
+
+
+
+//////////////////////////////MEDIA QUERY//////////////////////////////////
+
+@media screen and (min-width: 600px) {
+  .mentions-legales-container{
+    padding-bottom: var(--padding-tablet);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .mentions-legales-container{
+    padding-bottom: var(--padding-pc);
+  }
 }

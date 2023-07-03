@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
-  burgerVisible: boolean = false;
+  burgerVisible: boolean = true;
 
   burgerToggle() {
     this.burgerVisible = !this.burgerVisible;
