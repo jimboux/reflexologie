@@ -22,7 +22,7 @@ img {
 
 .confidential-politic-container,
 .page-404-container,
-.mentions-legales-container {
+.mentions-legales-container, .contact-container {
   padding: var(--padding-mobile);
 }
 
@@ -31,14 +31,15 @@ img {
 @media screen and (min-width: 600px) {
   .confidential-politic-container,
   .page-404-container,
-  .mentions-legales-container {
+  .mentions-legales-container,
+  .contact-container {
     padding: var(--padding-tablet);
   }
 }
 @media screen and (min-width: 1200px) {
   .confidential-politic-container,
   .page-404-container,
-  .mentions-legales-container {
+  .mentions-legales-container, .contact-container {
     padding: var(--padding-pc);
   }
 }
