@@ -34,6 +34,11 @@ i {
 nav div{
   cursor: pointer;
 }
+nav div:hover{
+  color: whitesmoke;
+  transition: 0.3s;
+}
+
 .visible {
   display: flex;
   flex-direction: column;
