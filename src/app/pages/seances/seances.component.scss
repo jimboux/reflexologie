@@ -1,11 +1,58 @@
-img{
-  width: 50vw;
-  max-width: 500px;
-}
 
-// table {
-//   border: 1px solid black;
-// }
-td{
+h2{
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin: 30px;
+  font-size: 2rem;
+ 
+}
+h3{
+  padding: 10% 0 5% 0;
+}
+span{
+  font-weight: 600;
+}
+p{
+  font-size: small;
+}
+p, table{
+  margin-bottom:5%
+
+}
+table {
+    border-collapse: collapse;
+    margin: auto;
+}
+thead{
+  background-color: var(--main-color);
+  color: whitesmoke;
+  padding: 3px;
   border: 1px solid black;
+}
+th {
+  padding: 10px;
+  border: 1px solid black;
+}
+td {
+  padding: 5px;
+     border: 1px solid black;
+     text-align: center;
+}
+.gift-card-container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+.imgages-container{
+display: flex;
+align-items: center;
+}
+.imgages-container img{
+  margin: auto;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  filter: drop-shadow(0 0 15px var(--main-color));
 }

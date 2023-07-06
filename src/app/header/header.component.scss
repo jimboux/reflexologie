@@ -9,7 +9,7 @@
 .logo-p-header-container {
   display: flex;
   align-items: center;
-  z-index: 1;
+  z-index: 2;
 }
 img {
   height: 10vh;
@@ -25,7 +25,7 @@ i {
   display: block;
 }
 .burger-icone-container{
-  z-index: 1;
+  z-index: 2;
 }
 .p1 {
   display: block;
@@ -53,6 +53,8 @@ nav div:hover{
   align-items: center;
   justify-content: space-evenly;
   padding-top: 10vh;
+  z-index: 1;
+  border-bottom-left-radius: 10px;
 }
 .invisible{
   right: -55vw;

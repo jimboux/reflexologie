@@ -1,5 +1,9 @@
 <div class="padding seances-container">
   <h2>Les séances</h2>
+  <div class="imgages-container">
+    <img src="../../../assets/massage1.jpeg" alt="photo d'un massage de pied">
+  </div>
+
   <h3>Déroulement d'une séance</h3>
   <p>
     Un pantalon ample est conseillé pour votre confort et celui du réflexologue.
@@ -29,15 +33,15 @@
     protocole de 3 séances espacées d'une semaine à quinze jours suivie d'une
     quatrième un mois après.
   </p>
-  <h3>Tarifs</h3>
-  <!-- FAIRE UN PUTAIN DE TABLEAU  -->
+  
   <table>
+      <!-- <caption>titre du tableau</caption> -->
     <thead>
       <tr>
-        <td>Séances</td>
-        <td>Public</td>
-        <td>Durée</td>
-        <td>Tarif</td>
+        <th>Séances</th>
+        <th>Public</th>
+        <th>Durée</th>
+        <th>Tarif</th>
       </tr>
     </thead>
     <tbody>
@@ -45,7 +49,7 @@
         <td rowspan="3">réflexologie plantaire</td>
         <td>adulte</td>
         <td>50 min</td>
-        <td> 40 €</td>
+        <td>40 €</td>
       </tr>
       <tr>
         
@@ -76,15 +80,18 @@
     Une majoration pour les frais de déplacement sera appliquée pour les soins
     de réflexologie réalisés au-delà de 10 kilomètres de mon domicile.
   </p>
-  <h3>Carte cadeau</h3>
-  <p>Envie d'offrir un moment de détente et de relaxation profonde ?</p>
-  <p>Prendre soin de celle et ceux que vous aimez ?</p>
-  <img
+  <div class="gift-card-container">
+    <h3>Carte cadeau</h3>
+ <img
     src="../../../assets/Gift card-rafiki.png"
     alt="image d'une femme qui porte un cadeau géant"
   />
+  </div>
+  <p>Envie d'offrir un moment de détente et de relaxation profonde ?</p>
+  <p>Prendre soin de celle et ceux que vous aimez ?</p>
+ 
   <p>
-    Contactez moi par téléphone ou via le <span>formulaire</span>. Vous recevrez
+    Contactez moi par téléphone ou via le <span routerLink="/contact">formulaire</span>. Vous recevrez
     votre bon cadeau par mail.
   </p>
 </div>
