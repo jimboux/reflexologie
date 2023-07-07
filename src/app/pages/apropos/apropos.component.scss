@@ -68,8 +68,11 @@ span {
     font-size: 2.5rem;
     width: 100%;
   }
+  .apropos-container{
+    padding: 0 22% 30vh 22%;
+  }
   .celine {
-    position: absolute;
+    position: fixed;
     animation: nico 1s ease-in;
     width: 20%;
     z-index: 1;
