@@ -19,27 +19,19 @@ img {
   font-family: "Poppins", sans-serif;
   cursor: default;
 }
-
-.confidential-politic-container,
-.page-404-container,
-.mentions-legales-container, .contact-container {
+.padding {
   padding: var(--padding-mobile);
 }
 
 //////////////////////////////MEDIA QUERY//////////////////////////////////
 
 @media screen and (min-width: 600px) {
-  .confidential-politic-container,
-  .page-404-container,
-  .mentions-legales-container,
-  .contact-container {
+  .padding {
     padding: var(--padding-tablet);
   }
 }
 @media screen and (min-width: 1200px) {
-  .confidential-politic-container,
-  .page-404-container,
-  .mentions-legales-container, .contact-container {
+  .padding {
     padding: var(--padding-pc);
   }
 }
