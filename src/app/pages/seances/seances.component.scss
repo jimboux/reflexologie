@@ -1,4 +1,3 @@
-
 h2{
   display: flex;
   text-align: center;
@@ -23,6 +22,7 @@ p, table{
 table {
     border-collapse: collapse;
     margin: auto;
+    margin-bottom: 20px;
 }
 thead{
   background-color: var(--main-color);
@@ -39,20 +39,86 @@ td {
      border: 1px solid black;
      text-align: center;
 }
-.gift-card-container{
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  justify-content: center;
-}
-.imgages-container{
+
+
+.imgage-container-1 {
 display: flex;
 align-items: center;
 }
-.imgages-container img{
+.imgage-container-1 img, .imgage-container-2 img{
   margin: auto;
-  width: 100%;
+  width: 80%;
   max-width: 500px;
   border-radius: 8px;
   filter: drop-shadow(0 0 15px var(--main-color));
+  margin-top: 5%;
+}
+.imgage-container-2 {
+  display: flex;
+  align-items: center;
+  }
+.gift-and-p {
+  display: flex;
+  align-items: center;
+  }
+.gift-image{
+  width: 50%;
+}
+.p-for-gift{
+  display: flex;
+  flex-direction: column;
+ gap: 30px;
+}
+
+
+
+//////////////////////////////MEDIA QUERY//////////////////////////////////
+
+@media screen and (min-width: 600px) {
+  table {
+    width: 80%;
+  }
+  th {
+    padding: 20px;
+  }
+  td {
+    padding: 10px;
+  }
+  h2{
+    font-size: 3rem;
+  }
+  h3{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    font-size: 2rem;
+  }
+  .imgage-container-1 img, .imgage-container-2 img{
+    width: 55%;
+    filter: drop-shadow(0 0 30px var(--main-color));
+  }
+  p{
+    font-size: medium;
+  }
+
+}
+@media screen and (min-width: 1200px) {
+  .imgage-container-1 img, .imgage-container-2 img{
+    width: 30%;
+    filter: drop-shadow(0 0 30px var(--main-color));
+  }
+  table {
+    height: 50vh;
+    font-size:large;
+
+  }
+  .gift-image{
+    width: 40%;
+  }
+  .gift-and-p {
+    justify-content: space-between;
+    }
+    p{
+      font-size:large;
+    }
 }

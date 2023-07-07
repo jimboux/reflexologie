@@ -1,7 +1,11 @@
 <div class="padding seances-container">
   <h2>Les séances</h2>
-  <div class="imgages-container">
-    <img src="../../../assets/massage1.jpeg" alt="photo d'un massage de pied">
+  <div class="imgage-container-1">
+    <img
+      src="../../../assets/massage1.jpeg"
+      loading="lazy"
+      alt="photo d'un massage de pied"
+    />
   </div>
 
   <h3>Déroulement d'une séance</h3>
@@ -26,16 +30,23 @@
     liste des recommandations vous sera remise pour optimiser les effets
     bénéfiques du soin.
   </p>
+  <div class="imgage-container-2">
+    <img
+      src="../../../assets/massage5.jpeg"
+      loading="lazy"
+      alt="photo d'un massage de pied"
+    />
+  </div>
   <h3>Nombre de séances</h3>
   <p>
     En fonction de la profondeur du dysfonctionnement, les résultats peuvent
     être immédiat ou nécessiter plusieurs séance. Il est recommandé de suivre le
     protocole de 3 séances espacées d'une semaine à quinze jours suivie d'une
-    quatrième un mois après.
+    quatrième un mois après.<br> Prise en charge par certaine mutuelle, renseignez-vous.
   </p>
-  
+
   <table>
-      <!-- <caption>titre du tableau</caption> -->
+    <!-- <caption>titre du tableau</caption> -->
     <thead>
       <tr>
         <th>Séances</th>
@@ -52,13 +63,11 @@
         <td>40 €</td>
       </tr>
       <tr>
-        
         <td>7 à 12 ans</td>
         <td>20 min</td>
         <td>25 €</td>
       </tr>
       <tr>
-        
         <td>- de 7 ans</td>
         <td>15 min</td>
         <td>15 €</td>
@@ -74,24 +83,31 @@
       </tr>
     </tbody>
   </table>
-
-  <p>Prise en charge par certaine mutuelle, renseignez-vous.</p>
   <p>
     Une majoration pour les frais de déplacement sera appliquée pour les soins
     de réflexologie réalisés au-delà de 10 kilomètres de mon domicile.
   </p>
-  <div class="gift-card-container">
+  <div>
     <h3>Carte cadeau</h3>
- <img
-    src="../../../assets/Gift card-rafiki.png"
-    alt="image d'une femme qui porte un cadeau géant"
-  />
+    <p>
+      Envie d'offrir un moment de détente et de relaxation profonde? <br> Prendre
+      soin de celle et ceux que vous aimez ?
+    </p>
+    <div class="gift-and-p">
+      <div class="p-for-gift">
+        <p>
+          Contactez moi par téléphone ou via le
+          <span routerLink="/contact">formulaire</span>.
+        </p>
+        <p>Vous recevrez votre bon cadeau par mail.</p>
+      </div>
+
+      <img routerLink="/contact"
+        class="gift-image"
+        src="../../../assets/Gift card-rafiki.png"
+        loading="lazy"
+        alt="image d'une femme qui porte un cadeau géant"
+      />
+    </div>
   </div>
-  <p>Envie d'offrir un moment de détente et de relaxation profonde ?</p>
-  <p>Prendre soin de celle et ceux que vous aimez ?</p>
- 
-  <p>
-    Contactez moi par téléphone ou via le <span routerLink="/contact">formulaire</span>. Vous recevrez
-    votre bon cadeau par mail.
-  </p>
 </div>
