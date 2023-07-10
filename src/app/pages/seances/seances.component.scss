@@ -43,9 +43,10 @@ td {
 .imgage-container-1 {
 display: flex;
 align-items: center;
+justify-content: space-around;
 }
-.imgage-container-1 img, .imgage-container-2 img{
-  margin: auto;
+
+img{
   width: 80%;
   max-width: 500px;
   border-radius: 8px;
@@ -55,6 +56,7 @@ align-items: center;
 .imgage-container-2 {
   display: flex;
   align-items: center;
+  justify-content: center;
   }
 .gift-and-p {
   display: flex;
@@ -68,7 +70,9 @@ align-items: center;
   flex-direction: column;
  gap: 30px;
 }
-
+.image-to-desktop{
+  display: none;
+}
 
 
 //////////////////////////////MEDIA QUERY//////////////////////////////////
@@ -102,14 +106,24 @@ align-items: center;
 
 }
 @media screen and (min-width: 1200px) {
-  .imgage-container-1 img, .imgage-container-2 img{
+  .imgage-container-1 img{
+    height: 400px;
+    // height: 35vh;
+    filter: drop-shadow(0 0 30px var(--main-color));
+    border-radius: 16px;
+  }
+  .imgage-container-2 img{
     width: 30%;
     filter: drop-shadow(0 0 30px var(--main-color));
   }
+
   table {
     height: 50vh;
     font-size:large;
 
+  }
+  .image-to-desktop{
+    display: block;
   }
   .gift-image{
     width: 40%;

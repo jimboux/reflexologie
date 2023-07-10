@@ -68,7 +68,7 @@ span {
     font-size: 2.5rem;
     width: 100%;
   }
-  .apropos-container{
+  .apropos-container {
     padding: 0 22% 30vh 22%;
   }
   .celine {
@@ -85,9 +85,11 @@ span {
     width: 250px;
   }
   @keyframes nico {
-    from {left: -20vw;
+    from {
+      left: -20vw;
+    }
+    to {
+      left: 0;
+    }
   }
-  to {
-    left: 0;
-  };}
 }
