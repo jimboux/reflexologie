@@ -1,0 +1,51 @@
+.parallax {
+  height: 20vh;
+  background-attachment:inherit;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+h3{
+  text-align: center;
+  color: white;
+}
+.parallax1 {
+  background-image: url("../../../assets/incas.jpeg");
+}
+
+.parallax2 {
+  background-image: url("../../../assets/Fitzgerald.jpeg");
+}
+
+.parallax3 {
+  background-image: url("../../../assets/ERVE.jpeg");
+}
+.parallax10 {
+  background-image: url("../../../assets/main.jpeg");
+}
+.parallax11 {
+  background-image: url("../../../assets/pieds_famille.jpg");
+}
+.black-title{
+  color: black;
+}
+
+@media screen and (min-width: 600px) {
+}
+@media screen and (min-width: 1200px) {
+  .parallax {
+    height: 100vh;
+    background-attachment: fixed;
+  }
+  .parallax10 {
+    height: 50vh;
+    width: 60vw;
+    margin: auto;
+  }
+  h3{
+    text-align: center;
+    color: white;
+    font-size: 
+    4rem;
+  }
+}
