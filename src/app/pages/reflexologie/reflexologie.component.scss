@@ -1,51 +1,76 @@
-.parallax {
-  height: 20vh;
-  background-attachment:inherit;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: contain;
-}
-h3{
+h2 {
+  padding: 10% 0 10% 0;
+  font-size: 2.2rem;
   text-align: center;
-  color: white;
 }
-.parallax1 {
-  background-image: url("../../../assets/incas.jpeg");
+h3 {
+  text-align: center;
+  padding: 5% 0 8% 0;
+  font-size: 1.4rem;
+
+}
+h4{
+  padding: 8% 0 2% 0;
+  font-size: 1.2rem;
+}
+span{
+  color: var(--main-color);
+  font-size: 1,1rem;
+  font-weight: 600;
 }
 
-.parallax2 {
-  background-image: url("../../../assets/Fitzgerald.jpeg");
+img{
+  display: block;
+  width: 84vw;
+  border-radius: 10px;
+  padding-bottom: 5vw;
 }
-
-.parallax3 {
-  background-image: url("../../../assets/ERVE.jpeg");
+.erve{
+  padding-top: 5vw;
 }
-.parallax10 {
-  background-image: url("../../../assets/main.jpeg");
+.filter {
+  filter: drop-shadow(0 0 8px var(--main-color));
 }
-.parallax11 {
-  background-image: url("../../../assets/pieds_famille.jpg");
-}
-.black-title{
-  color: black;
+i{
+  color: red;
 }
 
 @media screen and (min-width: 600px) {
-}
-@media screen and (min-width: 1200px) {
-  .parallax {
-    height: 100vh;
-    background-attachment: fixed;
-  }
-  .parallax10 {
-    height: 50vh;
-    width: 60vw;
+  img{
     margin: auto;
   }
-  h3{
-    text-align: center;
-    color: white;
-    font-size: 
-    4rem;
+  .img-to-reduce{
+    width: 35vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  h2 {
+    padding: 5% 0 2% 0;
+    font-size: 2.6rem;
+  }
+  h3 {
+    padding: 3% 0 3% 0;
+    font-size: 1.6rem;
+  }
+  h4{
+    padding: 3% 0 2% 0;
+    font-size: 1.4rem;
+  }
+  span{
+    color: var(--main-color);
+    font-size: 1,4rem;
+    font-weight: 600;
+  }
+  
+  img{
+    width: 70vw;
+    max-width: 1200px;
+    }
+  .filter {
+    filter: drop-shadow(0 0 20px var(--main-color));
+  
+  }
+  .img-to-reduce{
+    width: 25vw;
   }
 }

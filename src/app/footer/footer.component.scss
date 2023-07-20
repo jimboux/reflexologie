@@ -62,7 +62,11 @@ i{
 
 
 //////////////////////////////MEDIA QUERY//////////////////////////////////
-
+@media screen and (max-width: 350px) {
+  .footer-upper {
+    display: none;
+  }
+}
 @media screen and (min-width: 600px) {
   .mailto{
     color: #2da080;
