@@ -1,7 +1,12 @@
+<img
+  class="logo"
+  src="../../../assets/accueil/logo1.jpg"
+  alt="logo l'art de la réflexologie"
+/>
 <div class="padding">
-  <h1>L'art de la réflexologie</h1>
+  <!-- <h1>L'art de la réflexologie</h1> -->
   <h2>A propos</h2>
-  <div>
+  <div class="txt-container">
     <p>
       la réflexologie vectorielle est une méthode énergétique vitaliste faisant
       appel à la participation active de la personne durant sa séance. Elle
@@ -18,24 +23,29 @@
       douceur. Vous vous sentirez incroyablement relaxé, allégé et en harmonie.
       Que vous souhaitiez simplement en découvrir les bienfaits ou que vous
       cherchiez à résoudre des dysfonctionnements chroniques, la réflexologie
-      vous donne énergie et vitalité.
+      vous donne énergie et vitalité. <button routerLink="/a-propos" class="button">voir plus</button>
     </p>
-    <button>voir plus</button>
-  </div>
-  <div>
-    <p>
-      Les pieds reflètent la façon dont nous avançons dans la vie. Ils portent
-      en eux la mémoire de chacun des pas que nous avons posés, qu'ils furent
-      heureux ou malheureux. En Médecine traditionnelle chinoise, la
-      réflexologie propose d'agir sur nos émotions en touchant directement
-      certaines zones liées à nos organes. Une manière de faire en sorte que
-    </p>
-    <p>" ce qui ne s'exprime pas, s'imprime dans notre corps ".</p>
+
+    <div>
+      <p>
+        Les pieds reflètent la façon dont nous avançons dans la vie. Ils portent
+        en eux la mémoire de chacun des pas que nous avons posés, qu'ils furent
+        heureux ou malheureux. En Médecine traditionnelle chinoise, la
+        réflexologie propose d'agir sur nos émotions en touchant directement
+        certaines zones liées à nos organes. Une manière de faire en sorte que
+      </p>
+      <p>" ce qui ne s'exprime pas, s'imprime dans notre corps ".</p>
+    </div>
   </div>
   <h2>Le salon</h2>
   <div>
     <!-- jouer avec les valeurs d'input pour accéder aux différentes features du carousel -->
-    <app-carousel [images]="images" [autoSlide]="true" [controls]="false" [indicators]="false"></app-carousel>
+    <app-carousel
+      [images]="images"
+      [autoSlide]="true"
+      [controls]="false"
+      [indicators]="false"
+    ></app-carousel>
     <iframe
       src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2719.5927909799557!2d2.220425476733674!3d47.02859757114263!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47faec0319801b25%3A0xcb74a5bc6a6e1b68!2s5%20Rte%20de%20Saint-Florent%2C%2018400%20Villeneuve-sur-Cher!5e0!3m2!1sfr!2sfr!4v1689941139858!5m2!1sfr!2sfr"
       style="border: 0"

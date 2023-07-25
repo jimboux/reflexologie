@@ -10,7 +10,14 @@
   </div>
   <nav (click)="burgerToggle()" [ngClass]="burgerVisible ? 'visible invisible' : 'visible'">
       <div [routerLink]="['accueil']">Accueil</div>
-      <div [routerLink]="['reflexologie']">La réflexologie</div>
+      <div (mouseenter)="showMenu()"
+      (mouseleave)="showMenu()" [routerLink]="['reflexologie']">La réflexologie
+      <ul class="sous-menu" *ngIf="showSubMenu">
+        <li><a routerLink="['/reflexologie']" fragment="milieu">milieu</a></li>
+        <li><a href="#">Sous-menu 2</a></li>
+        <li><a href="#">Sous-menu 3</a></li>
+      </ul>
+    </div>
       <div [routerLink]="['a-propos']">A propos</div>
       <div [routerLink]="['seances']">Séances</div>
       <div [routerLink]="['contact']">Contact</div>

@@ -6,7 +6,13 @@ import { Component } from '@angular/core';
   styleUrls: ['./header.component.scss'],
 })
 export class HeaderComponent {
+  showSubMenu = false;
   burgerVisible: boolean = true;
+  
+  showMenu() {
+    this.showSubMenu = !this.showSubMenu;
+    console.log(this.showSubMenu);
+  }
 
   burgerToggle() {
     this.burgerVisible = !this.burgerVisible;

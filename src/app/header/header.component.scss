@@ -64,6 +64,32 @@ nav div:hover{
     margin-top: 10px;
     display: none;
   }
+  .sous-menu{
+    position: fixed;
+    background-color: #2da080;
+    padding: 10px;
+    border: 1px solid black;
+  }
+  .sous-menu li a {
+  color: black;
+  }
+  .sous-menu li {
+   margin-top: 20px;
+    }
+  .sous-menu li:hover a {
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+
+
+
+
+
+
+
+
 //////////////////////////////MEDIA QUERY//////////////////////////////////
 
 @media screen and (min-width: 600px) {
