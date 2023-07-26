@@ -1,0 +1,23 @@
+.arrow {
+  position: fixed;
+  bottom: 30px;
+  right: 0;
+  display: none; /* Masquer le bouton par défaut */
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #333;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  border-radius: 4px;
+}
+
+.arrow:hover {
+  background-color: #555;
+}
+
+/* Afficher le bouton lorsque le scroll est supérieur à 600px */
+.show {
+  display: block;
+}

@@ -15,6 +15,7 @@ import { LegalmentionsComponent } from './pages/legalmentions/legalmentions.comp
 import { ConfidentialPoliticComponent } from './pages/confidential-politic/confidential-politic.component';
 import { Page404Component } from './pages/page404/page404.component';
 import { CarouselComponent } from './shared/carousel/carousel.component';
+import { ArrowUpComponent } from './shared/arrow-up/arrow-up.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { CarouselComponent } from './shared/carousel/carousel.component';
     LegalmentionsComponent,
     ConfidentialPoliticComponent,
     Page404Component,
-    CarouselComponent
+    CarouselComponent,
+    ArrowUpComponent
   ],
   imports: [
     BrowserModule,
