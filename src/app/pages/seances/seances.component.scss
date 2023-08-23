@@ -11,9 +11,7 @@ h3{
 span{
   font-weight: 600;
 }
-p{
-  font-size: small;
-}
+
 p, table{
   margin-bottom:5%
 
@@ -100,9 +98,7 @@ img{
     width: 55%;
     filter: drop-shadow(0 0 30px var(--main-color));
   }
-  p{
-    font-size: medium;
-  }
+
 
 }
 @media screen and (min-width: 1200px) {
@@ -130,8 +126,5 @@ img{
   }
   .gift-and-p {
     justify-content: space-between;
-    }
-    p{
-      font-size:large;
     }
 }

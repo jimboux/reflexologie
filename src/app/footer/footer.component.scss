@@ -97,13 +97,8 @@ font-size: 1.3rem;
 ul{
   font-size: medium;
 }
+p {font-size: 1rem;}
 }
-
-
-
-
-
-
 
 @media screen and (min-width: 1200px) {
   .footer-upper{
@@ -137,6 +132,7 @@ ul li:nth-child(2){
 i{
 font-size: 2rem;
 }
+
 
 .follow-me-container i:hover {
   color: #2da080;

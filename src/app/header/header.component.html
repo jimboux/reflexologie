@@ -1,6 +1,10 @@
 <header class="header-container">
   <div class="logo-p-header-container">
-    <img [routerLink]="['accueil']" src="./assets/logo/logowotxt.png" alt="logo du site" />
+    <img
+      [routerLink]="['accueil']"
+      src="./assets/logo/logowotxt.png"
+      alt="logo du site"
+    />
     <div class="p-header">
       <P class="name">Céline Moreira</P>
       <P class="p1">L'art de la réflexologie plantaire</P>
@@ -8,19 +12,35 @@
       <P class="p3">certifiée palmaire & plantaire</P>
     </div>
   </div>
-  <nav (click)="burgerToggle()" [ngClass]="burgerVisible ? 'visible invisible' : 'visible'">
-      <div [routerLink]="['accueil']">Accueil</div>
-      <div (mouseenter)="showMenu()"
-      (mouseleave)="showMenu()" [routerLink]="['reflexologie']">La réflexologie
+  <nav
+    (click)="burgerToggle()"
+    [ngClass]="burgerVisible ? 'visible invisible' : 'visible'"
+  >
+    <div [routerLink]="['accueil']">Accueil</div>
+    <div
+      (mouseenter)="showMenu()"
+      (mouseleave)="showMenu()"
+      [routerLink]="['reflexologie']"
+    >
+      La réflexologie
       <ul class="sous-menu" *ngIf="showSubMenu">
-        <li><a routerLink="['/reflexologie']" fragment="milieu">milieu</a></li>
-        <li><a href="#">Sous-menu 2</a></li>
-        <li><a href="#">Sous-menu 3</a></li>
+        <li><a href="/reflexologie#presentation">Présentation générale</a></li>
+        <li>
+          <a href="/reflexologie#qui">Pour qui ? </a>
+        </li>
+        <li>
+          <a href="/reflexologie#contrindication">Les contre indications</a>
+        </li>
+        <!-- <li>
+          <a [routerLink]="['reflexologie']" fragment="contrindication"
+            >Les contre indications</a
+          >
+        </li> -->
       </ul>
     </div>
-      <div [routerLink]="['a-propos']">A propos</div>
-      <div [routerLink]="['seances']">Séances</div>
-      <div [routerLink]="['contact']">Contact</div>
+    <div [routerLink]="['a-propos']">A propos</div>
+    <div [routerLink]="['seances']">Séances</div>
+    <div [routerLink]="['contact']">Contact</div>
   </nav>
   <div class="burger-icone-container" (click)="burgerToggle()">
     <i [ngClass]="burgerVisible ? 'fa-solid fa-bars' : 'fa-solid fa-xmark'"></i>

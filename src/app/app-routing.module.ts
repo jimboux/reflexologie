@@ -11,20 +11,25 @@ import { ConfidentialPoliticComponent } from './pages/confidential-politic/confi
 import { Page404Component } from './pages/page404/page404.component';
 
 const routes: Routes = [
-  { path: '', component: AccueilComponent},
-  { path: 'accueil', component: AccueilComponent},
-  { path: 'mentions-legales', component: LegalmentionsComponent},
-  { path: 'CGU', component: CguComponent},
-  { path: 'reflexologie', component: ReflexologieComponent},
-  { path: 'a-propos', component: AproposComponent},
-  { path: 'seances', component: SeancesComponent},
-  { path: 'contact', component: ContactComponent},
-  { path: 'politique-confidentialite', component: ConfidentialPoliticComponent},
-  { path: '**', component: Page404Component},
+  { path: '', component: AccueilComponent },
+  { path: 'accueil', component: AccueilComponent },
+  { path: 'mentions-legales', component: LegalmentionsComponent },
+  { path: 'CGU', component: CguComponent },
+  { path: 'reflexologie', component: ReflexologieComponent },
+  { path: 'reflexologie#presentation', component: ReflexologieComponent },
+
+  { path: 'a-propos', component: AproposComponent },
+  { path: 'seances', component: SeancesComponent },
+  { path: 'contact', component: ContactComponent },
+  {
+    path: 'politique-confidentialite',
+    component: ConfidentialPoliticComponent,
+  },
+  { path: '**', component: Page404Component },
 ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

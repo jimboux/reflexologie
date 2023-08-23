@@ -23,12 +23,20 @@ img {
   padding: var(--padding-mobile);
 }
 
+p {
+  font-size: 1rem;
+}
+
 //////////////////////////////MEDIA QUERY//////////////////////////////////
 
 @media screen and (min-width: 600px) {
   .padding {
     padding: var(--padding-tablet);
   }
+  p {
+    font-size: 1.3rem;
+  }
+  
 }
 @media screen and (min-width: 1200px) {
   .padding {

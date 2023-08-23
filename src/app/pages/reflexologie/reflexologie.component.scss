@@ -34,6 +34,10 @@ img{
 i{
   color: red;
 }
+.Fitzgerald{
+  width: 40vw;
+  margin: auto;
+}
 
 
 
@@ -53,17 +57,20 @@ i{
   }
 }
 @media screen and (min-width: 1200px) {
+  p, ul{
+    font-size: 1.3rem;
+  }
   h2 {
     padding: 5% 0 2% 0;
-    font-size: 2.6rem;
+    font-size: 3.2rem;
   }
   h3 {
     padding: 3% 0 3% 0;
-    font-size: 1.6rem;
+    font-size: 2.2rem;
   }
   h4{
     padding: 3% 0 2% 0;
-    font-size: 1.4rem;
+    font-size: 1.8rem;
   }
   span{
     color: var(--main-color);
@@ -72,7 +79,7 @@ i{
   }
   
   img{
-    width: 70vw;
+    width: 60vw;
     max-width: 1200px;
     }
   .filter {
@@ -81,5 +88,8 @@ i{
   }
   .img-to-reduce{
     width: 25vw;
+  }
+  .Fitzgerald{
+    width: 20vw;
   }
 }

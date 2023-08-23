@@ -16,6 +16,7 @@ import { ConfidentialPoliticComponent } from './pages/confidential-politic/confi
 import { Page404Component } from './pages/page404/page404.component';
 import { CarouselComponent } from './shared/carousel/carousel.component';
 import { ArrowUpComponent } from './shared/arrow-up/arrow-up.component';
+import { RouterModule, Routes } from '@angular/router';
 
 @NgModule({
   declarations: [
