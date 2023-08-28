@@ -16,6 +16,5 @@ export class ArrowUpComponent {
     onScroll(): void {
       this.scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
       console.log(this.scrollPosition);
-      
     }
 }

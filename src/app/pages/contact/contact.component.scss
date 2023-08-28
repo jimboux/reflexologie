@@ -17,19 +17,15 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: small;
-  line-height: 15px;
 }
 
 .content-container-header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: x-small;
 }
 h2 {
   margin: 30px 0 10px 0;
-  font-size: 1.5rem;
 }
 .content-container-body {
   display: flex;
@@ -119,7 +115,6 @@ textarea::content{
   gap:20px;
 }
 h5 {
-  font-size: 1.3rem;
   margin-bottom: 10px;
 }
 .coordo, .schedule{
@@ -151,16 +146,8 @@ span{
 ////////////////////////////////MEDIA QUERY///////////
 
 @media screen and (min-width: 600px) {
-  .content-container {
-    font-size: medium;
-  }
-  .content-container-header {
-    font-size: 1rem;
-    line-height: 30px;
-  }
   h2 {
     margin: 30px 0 30px 0;
-    font-size: 2.5rem;
   }
   .schedule-and-coordo{
     display: flex;

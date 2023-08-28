@@ -49,15 +49,14 @@ nav div:hover{
   height: 60vh;
   background-color:#2da080; 
   transition: right 1s;
-  font-size: 1.5em;
   align-items: center;
   justify-content: space-evenly;
-  padding-top: 10vh;
+  padding-top: 5vh;
   z-index: 1;
   border-bottom-left-radius: 10px;
 }
 .invisible{
-  right: -55vw;
+  right: -50vw;
 }
 .p3, .p2 {
     margin-left: 20px;
@@ -74,19 +73,13 @@ nav div:hover{
   color: black;
   }
   .sous-menu li {
-   margin-top: 20px;
+   margin: 10px 0 10px 0;
     }
   .sous-menu li:hover a {
     color: white;
     transition: 0.3s;
     cursor: pointer;
   }
-
-
-
-
-
-
 
 
 
@@ -107,7 +100,9 @@ nav div:hover{
     height: 79vh;
     padding-top: 15vh;
   }
-
+  nav div{
+  font-size: 1.5rem;
+}
 
 }
 @media screen and (min-width: 1200px) {
