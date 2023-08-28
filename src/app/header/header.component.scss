@@ -5,6 +5,7 @@
   height: 10vh;
   background-color: #2da080;
   font-family: "Poppins";
+  font-weight: 600;
 }
 .logo-p-header-container {
   display: flex;
@@ -88,10 +89,9 @@ nav div:hover{
 @media screen and (min-width: 600px) {
   .p1, .p3, .p2 {
     margin-left: 20px;
-    margin-top: 10px;
+    // margin-top: 10px;
     display: block;
-  font-size: 1em;
-
+  font-size: 1rem;
   }
   .header-container, img {
     height: 15vh;
@@ -120,5 +120,8 @@ nav div:hover{
     height: auto;
     padding-top: 0;
   }
-  
+  .p-header{
+    height: 100%;
+  }
+
 }
