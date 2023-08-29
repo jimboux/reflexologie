@@ -5,6 +5,7 @@
   height: 10vh;
   background-color: #2da080;
   font-family: "Poppins";
+  font-weight: 600;
 }
 .logo-p-header-container {
   display: flex;
@@ -49,30 +50,48 @@ nav div:hover{
   height: 60vh;
   background-color:#2da080; 
   transition: right 1s;
-  font-size: 1.5em;
   align-items: center;
   justify-content: space-evenly;
-  padding-top: 10vh;
+  padding-top: 5vh;
   z-index: 1;
   border-bottom-left-radius: 10px;
 }
 .invisible{
-  right: -55vw;
+  right: -50vw;
 }
 .p3, .p2 {
     margin-left: 20px;
     margin-top: 10px;
     display: none;
   }
+  .sous-menu{
+    position: fixed;
+    background-color: #2da080;
+    padding: 10px;
+    border: 1px solid black;
+  }
+  .sous-menu li a {
+  color: black;
+  }
+  .sous-menu li {
+   margin: 10px 0 10px 0;
+    }
+  .sous-menu li:hover a {
+    color: white;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+
+
+
 //////////////////////////////MEDIA QUERY//////////////////////////////////
 
 @media screen and (min-width: 600px) {
   .p1, .p3, .p2 {
     margin-left: 20px;
-    margin-top: 10px;
+    // margin-top: 10px;
     display: block;
-  font-size: 1em;
-
+  font-size: 1rem;
   }
   .header-container, img {
     height: 15vh;
@@ -81,7 +100,9 @@ nav div:hover{
     height: 79vh;
     padding-top: 15vh;
   }
-
+  nav div{
+  font-size: 1.5rem;
+}
 
 }
 @media screen and (min-width: 1200px) {
@@ -99,5 +120,8 @@ nav div:hover{
     height: auto;
     padding-top: 0;
   }
-  
+  .p-header{
+    height: 100%;
+  }
+
 }

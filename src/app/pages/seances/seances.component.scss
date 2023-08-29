@@ -3,7 +3,6 @@ h2{
   text-align: center;
   justify-content: center;
   margin: 30px;
-  font-size: 2rem;
 }
 h3{
   padding: 10% 0 5% 0;
@@ -11,9 +10,7 @@ h3{
 span{
   font-weight: 600;
 }
-p{
-  font-size: small;
-}
+
 p, table{
   margin-bottom:5%
 
@@ -43,18 +40,20 @@ td {
 .imgage-container-1 {
 display: flex;
 align-items: center;
+justify-content: space-around;
 }
-.imgage-container-1 img, .imgage-container-2 img{
-  margin: auto;
+
+img{
   width: 80%;
   max-width: 500px;
   border-radius: 8px;
-  filter: drop-shadow(0 0 15px var(--main-color));
+  filter: drop-shadow(0 0 15px );
   margin-top: 5%;
 }
 .imgage-container-2 {
   display: flex;
   align-items: center;
+  justify-content: center;
   }
 .gift-and-p {
   display: flex;
@@ -68,7 +67,9 @@ align-items: center;
   flex-direction: column;
  gap: 30px;
 }
-
+.image-to-desktop{
+  display: none;
+}
 
 
 //////////////////////////////MEDIA QUERY//////////////////////////////////
@@ -83,41 +84,42 @@ align-items: center;
   td {
     padding: 10px;
   }
-  h2{
-    font-size: 3rem;
-  }
   h3{
     display: flex;
     text-align: center;
     justify-content: center;
-    font-size: 2rem;
   }
   .imgage-container-1 img, .imgage-container-2 img{
     width: 55%;
     filter: drop-shadow(0 0 30px var(--main-color));
   }
-  p{
-    font-size: medium;
-  }
+
 
 }
 @media screen and (min-width: 1200px) {
-  .imgage-container-1 img, .imgage-container-2 img{
+  .imgage-container-1 img{
+    height: 400px;
+    // height: 35vh;
+    filter: drop-shadow(0 0 30px var(--main-color));
+    border-radius: 16px;
+  }
+  .imgage-container-2 img{
     width: 30%;
     filter: drop-shadow(0 0 30px var(--main-color));
   }
+
   table {
     height: 50vh;
     font-size:large;
 
+  }
+  .image-to-desktop{
+    display: block;
   }
   .gift-image{
     width: 40%;
   }
   .gift-and-p {
     justify-content: space-between;
-    }
-    p{
-      font-size:large;
     }
 }

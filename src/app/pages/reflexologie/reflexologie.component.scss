@@ -1,0 +1,93 @@
+h2 {
+  padding: 10% 0 10% 0;
+  text-align: center;
+}
+h3 {
+  text-align: center;
+  padding: 5% 0 8% 0;
+
+}
+h4{
+  padding: 8% 0 2% 0;
+}
+span{
+  color: var(--main-color);
+  font-size: 1,1rem;
+  font-weight: 600;
+}
+
+img{
+  display: block;
+  width: 84vw;
+  border-radius: 10px;
+  padding-bottom: 5vw;
+}
+.erve{
+  padding-top: 5vw;
+}
+.filter {
+  filter: drop-shadow(0 0 8px var(--main-color));
+}
+i{
+  color: red;
+}
+.Fitzgerald{
+  width: 40vw;
+  margin: auto;
+}
+.plantaire {
+  border-radius: 50%;
+}
+
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+@media screen and (min-width: 600px) {
+  img{
+    margin: auto;
+  }
+  .img-to-reduce{
+    width: 35vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  ul{
+    font-size: 1.3rem;
+  }
+  h2 {
+    padding: 5% 0 2% 0;
+  }
+  h3 {
+    padding: 3% 0 3% 0;
+  }
+  h4{
+    padding: 3% 0 2% 0;
+  }
+  span{
+    color: var(--main-color);
+    font-weight: 600;
+  }
+  
+  img{
+    width: 60vw;
+    max-width: 1200px;
+    }
+  .filter {
+    filter: drop-shadow(0 0 20px var(--main-color));
+  
+  }
+  .img-to-reduce{
+    width: 25vw;
+  }
+  .Fitzgerald{
+    width: 20vw;
+  }
+  .plantaire {
+    width: 30%;
+  }
+}

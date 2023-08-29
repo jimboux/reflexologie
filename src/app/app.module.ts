@@ -14,6 +14,9 @@ import { CguComponent } from './pages/cgu/cgu.component';
 import { LegalmentionsComponent } from './pages/legalmentions/legalmentions.component';
 import { ConfidentialPoliticComponent } from './pages/confidential-politic/confidential-politic.component';
 import { Page404Component } from './pages/page404/page404.component';
+import { CarouselComponent } from './shared/carousel/carousel.component';
+import { ArrowUpComponent } from './shared/arrow-up/arrow-up.component';
+import { RouterModule, Routes } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -28,7 +31,9 @@ import { Page404Component } from './pages/page404/page404.component';
     CguComponent,
     LegalmentionsComponent,
     ConfidentialPoliticComponent,
-    Page404Component
+    Page404Component,
+    CarouselComponent,
+    ArrowUpComponent
   ],
   imports: [
     BrowserModule,
