@@ -7,26 +7,20 @@
         <p>Je reste disponible pour répondre à vos questions.</p>
       </div>
     </section>
+
     <section class="content-container-body">
-      <form action="https://formsubmit.co/cmoreira.lart.reflexologie@gmail.com" method="POST">
+     <form action="https://formsubmit.co/jimmy.cuogo@gmail.com" method="POST">
+        <input type="hidden" name="_captcha" value="false">
+        <input type="text" name="_honey" style="display:none">
+        <input type="hidden" name="_subject" value="Nouveau message du site l'art de la réflexologie">
+        <input type="hidden" name="_next" value="http://localhost:4200/formulaire-envoyé">
         <fieldset>
           <label for="name">Votre Nom * : </label>
-          <input
-            type="text"
-            name="name"
-            placeholder="Tapez votre nom ici"
-            autocomplete="off"
-            required
-          />
+          <input type="text" name="name" placeholder="Tapez votre nom ici" autocomplete="off" required/>
         </fieldset>
         <fieldset>
           <label for="email">Email * : </label>
-          <input
-            type="email"
-            name="email"
-            placeholder="Tapez votre email ici"
-            required
-          />
+          <input type="email" name="email" placeholder="Tapez votre email ici" required/>
         </fieldset>
         <fieldset>
           <label for="subject">Sujet : </label>
@@ -54,9 +48,7 @@
             </div>
             <div>
               <i class="fa-regular fa-envelope"></i>
-              <a
-                class="mailto"
-                href="mailto:cmoreira.lart.reflexologie@gmail.com"
+              <a class="mailto" href="mailto:cmoreira.lart.reflexologie@gmail.com"
                 >cmoreira.lart.reflexologie@gmail.com</a
               >
             </div>
@@ -73,6 +65,7 @@
         </p>
       </div>
     </section>
+
     <section class="content-container-footer">
       <p>
         * En cliquant sur <span>"Envoyer"</span>, j'accepte expressément les
@@ -83,3 +76,4 @@
     </section>
   </div>
 </div>
+<app-loader [booleanVisibilityInLoarder]="isLoaderVisible"></app-loader>
