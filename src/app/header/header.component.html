@@ -4,7 +4,7 @@
       [routerLink]="['accueil']"
       src="./assets/logo/logowotxt.png"
       alt="logo du site"
-    />
+      />
     <div class="p-header">
       <P class="name">Céline Moreira</P>
       <P class="p1">L'art de la réflexologie plantaire</P>
@@ -14,28 +14,30 @@
   </div>
   <nav
     [ngClass]="burgerVisible ? 'visible invisible' : 'visible'"
-  >
+    >
     <div [routerLink]="['accueil']">Accueil</div>
     <div
       (mouseenter)="showMenu()"
       (mouseleave)="showMenu()"
       [routerLink]="['reflexologie']"
-    >
+      >
       La réflexologie
-      <ul class="sous-menu" *ngIf="showSubMenu">
-        <li><a href="/reflexologie#presentation">Présentation générale</a></li>
-        <li>
-          <a href="/reflexologie#qui">Pour qui ? </a>
-        </li>
-        <!-- <li>
+      @if (showSubMenu) {
+        <ul class="sous-menu">
+          <li><a href="/reflexologie#presentation">Présentation générale</a></li>
+          <li>
+            <a href="/reflexologie#qui">Pour qui ? </a>
+          </li>
+          <!-- <li>
           <a href="/reflexologie#contrindication">Les contre indications</a>
         </li> -->
         <li>
           <a [routerLink]="['reflexologie']" fragment="contrindication"
             >Les contre indications</a
-          >
-        </li>
-      </ul>
+            >
+          </li>
+        </ul>
+      }
     </div>
     <div [routerLink]="['a-propos']">A propos</div>
     <div [routerLink]="['seances']">Séances</div>
