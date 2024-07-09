@@ -65,10 +65,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "reflexologie:build:production"
+              "buildTarget": "reflexologie:build:production"
             },
             "development": {
-              "browserTarget": "reflexologie:build:development"
+              "buildTarget": "reflexologie:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "reflexologie:build"
+            "buildTarget": "reflexologie:build"
           }
         },
         "test": {
