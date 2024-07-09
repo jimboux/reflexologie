@@ -1,0 +1,45 @@
+// ----- color -----
+$green: #2da080;
+$white-smoke: whitesmoke;
+$white: #fff;
+$black: #000000;
+
+// ----- padding -----
+$normal-padding: 8px;
+$double-padding: 2 * $normal-padding;
+$triple-padding: 3 * $normal-padding;
+$quadruple-padding: 4 * $normal-padding;
+$half-padding: calc($normal-padding / 2);
+
+// ----- margin -----
+$normal-margin: 8px;
+$double-margin: 2 * $normal-margin;
+$triple-margin: 3 * $normal-margin;
+$quadruple-margin: 4 * $normal-margin;
+
+// ----- font-size -----
+$ssm-font-size: 10px;
+$sm-font-size: 11px;
+$xsm-font-size: 12px;
+$normal-font-size: 14px;
+$lg-font-size: 16px;
+$l-font-size: 20px;
+$xl-font-size: 24px;
+$xxl-font-size: 32px;
+
+// ----- font-style -----
+$italic: italic;
+$letter-spacing: 0.08em;
+
+// ------ FONT WEIGHT ------
+$weight-900: 900;
+$weight-600: 600;
+
+// ----- border radius -----
+$border-radius: 8px;
+$half_openBorderRadius: 4px;
+$double-border-radius: 16px;
+
+// ------ FONT FAMILY ------
+$font-poppins: "Poppins", sans-serif;
+$font-great-vibes: "Great Vibes", cursive;

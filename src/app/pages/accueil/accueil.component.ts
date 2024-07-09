@@ -6,7 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./accueil.component.scss']
 })
 export class AccueilComponent {
-
+ title : string = "L'art de la réflexologie";
   images = [
     {
       imageSrc: '../../../../assets/salon/1.jpeg',
