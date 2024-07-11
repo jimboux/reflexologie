@@ -1,13 +1,13 @@
-/* You can add global styles to this file, and also import other style files */
+@import "../src/app/scss/variable.scss";
+
+
 $main-color: #2da080;
+
 :root {
   --padding-mobile: 0 8vw 20vh 8vw;
   --padding-tablet: 0 8vw 25vh 8vw;
   --padding-pc: 0 3vw 30vh 3vw;
   --main-color: #2da080;
-}
-img {
-  object-fit: contain;
 }
 
 * {
@@ -20,6 +20,139 @@ img {
   text-align: justify;
   cursor: default
 }
+
+/* ------ Flex Layouts ------ */
+
+.flex {
+  display: flex;
+  &.row {
+    flex-direction: row;
+    margin: 0;
+  }
+  &.column {
+    flex-direction: column;
+  }
+  &.center {
+    align-items: center;
+    justify-content: center;
+  }
+  &.align-center {
+    align-items: center;
+  }
+  &.justify-center {
+    justify-content: center;
+  }
+  &.space-between {
+    justify-content: space-between;
+  }
+  &.space-around {
+    justify-content: space-around;
+  }
+  &.wrap {
+    flex-wrap: wrap;
+  }
+  &.relative {
+    position: relative;
+  }
+}
+
+/* --------- Gap pour l'intérieur des flex --------- */
+  
+.gap8 {
+  gap: 8px;
+}
+
+.gap16 {
+  gap: 16px;
+}
+
+.gap24 {
+  gap: 24px;
+}
+
+.gap32 {
+  gap: 32px;
+}
+
+/* --------- Width % --------- */
+.w5 {
+  width: 5%;
+}
+.w10 {
+  width: 10%;
+}
+.w15 {
+  width: 15%;
+}
+.w20 {
+  width: 20%;
+}
+.w25 {
+  width: 25%;
+}
+.w30 {
+  width: 30%;
+}
+.w35 {
+  width: 35%;
+}
+.w40 {
+  width: 40%;
+}
+.w45 {
+  width: 45%;
+}
+.w50 {
+  width: 50%;
+}
+.w55 {
+  width: 55%;
+}
+.w60 {
+  width: 60%;
+}
+.w65 {
+  width: 65%;
+}
+.w70 {
+  width: 70%;
+}
+.w75 {
+  width: 75%;
+}
+.w80 {
+  width: 80%;
+}
+.w85 {
+  width: 85%;
+}
+.w90 {
+  width: 90%;
+}
+.w95 {
+  width: 95%;
+}
+.w100 {
+  width: 100%;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.disabled {
+  cursor: not-allowed;
+}
+
+.display-none {
+  display: none;
+}
+
+img {
+  object-fit: contain;
+}
+
+
 .padding {
   padding: var(--padding-mobile);
 }
@@ -28,14 +161,14 @@ p {
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
 }
-h1, h2, h3 {
+h2, h3 {
    font-family: "Great Vibes", cursive;
    letter-spacing: 0.0725em;
 }
 h2 {
   font-size: 2.8rem;
 }
-h3{
+h3 {
   font-size: 1.8rem;
 }
 h4 {

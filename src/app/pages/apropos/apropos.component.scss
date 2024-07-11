@@ -1,10 +1,17 @@
+@import "src/app/scss/variable.scss";
+
 .h2-celine-img {
   display: flex;
   flex-direction: column-reverse;
 }
 h2 {
-  padding: 10% 0 10% 0;
+  padding: 10% 0;
   text-align: center;
+  font-family: "Great Vibes", cursive;
+  letter-spacing: 0.05em;
+  font-size: 3.5rem;
+  color: var(--main-color);
+  text-shadow: #000000 2px 1px
 }
 .apropos-container {
   display: flex;
@@ -43,6 +50,8 @@ span {
 @media screen and (min-width: 600px) {
   h2 {
     padding: 10% 0 5% 0;
+    letter-spacing: 0.1em;
+    font-size: 5rem;
   }
   .celine {
     width: 40%;
@@ -64,13 +73,14 @@ span {
   }
   h2 {
     width: 100%;
+    padding: 0;
   }
   .apropos-container {
     padding: 0 22% 30vh 22%;
   }
   .celine {
     position: fixed;
-    animation: nico 1s ease-in;
+    animation: come-in 1s ease-in;
     width: 20%;
     z-index: 1;
   }
@@ -81,7 +91,7 @@ span {
   .reiki {
     width: 250px;
   }
-  @keyframes nico {
+  @keyframes come-in {
     from {
       left: -20vw;
     }

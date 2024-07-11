@@ -3,8 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './header/header.component';
-import { FooterComponent } from './footer/footer.component';
+import { HeaderComponent } from './shared/header/header.component';
+import { FooterComponent } from './shared/footer/footer.component';
 import { AccueilComponent } from './pages/accueil/accueil.component';
 import { ReflexologieComponent } from './pages/reflexologie/reflexologie.component';
 import { AproposComponent } from './pages/apropos/apropos.component';
@@ -16,9 +16,9 @@ import { ConfidentialPoliticComponent } from './pages/confidential-politic/confi
 import { Page404Component } from './pages/page404/page404.component';
 import { CarouselComponent } from './shared/carousel/carousel.component';
 import { ArrowUpComponent } from './shared/arrow-up/arrow-up.component';
-import { RouterModule, Routes } from '@angular/router';
 import { FormSentComponent } from './pages/form-sent/form-sent.component';
 import { LoaderComponent } from './shared/loader/loader.component';
+import { TitleComponent } from './shared/title/title.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +41,8 @@ import { LoaderComponent } from './shared/loader/loader.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    TitleComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

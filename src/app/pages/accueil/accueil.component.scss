@@ -92,7 +92,9 @@ iframe {
   }
 }
 @media screen and (min-width: 1200px) {
-  h1{
+  h1 {
+    font-family: "Great Vibes", cursive;
+    letter-spacing: 0.08em;
     font-size: 6.5rem;
     margin-top: 5vh;
     color: var(--main-color);
