@@ -1,22 +1,20 @@
-<div class="padding contact-container">
+<div class="padding contact-container flex center">
   <div class="content-container">
-    <section class="content-container-header">
+    <section class="flex column center">
       <app-title [title]="'Contactez-moi'"/>
-      <div class="content-container-header-p">
         <p>Merci de compléter ce formulaire pour prendre rendez vous.</p>
         <p>Je reste disponible pour répondre à vos questions.</p>
-      </div>
     </section>
 
     <section class="content-container-body">
-     <form action="https://formsubmit.co/jimmy.cuogo@gmail.com" method="POST">
+     <form action="https://formsubmit.co/cmoreira.lart.reflexologie@gmail.com" method="POST" class="flex column center">
         <input type="hidden" name="_captcha" value="false">
         <input type="text" name="_honey" style="display:none">
         <input type="hidden" name="_subject" value="Nouveau message du site l'art de la réflexologie">
         <input type="hidden" name="_next" value="http://localhost:4200/formulaire-envoyé">
 
         <fieldset>
-          <label for="name">Votre Nom * : </label>
+          <label for="name">Votre nom * : </label>
           <input type="text" name="name" placeholder="Tapez votre nom ici" autocomplete="off" required/>
         </fieldset>
 
@@ -35,7 +33,7 @@
           <textarea name="message"></textarea>
         </fieldset>
 
-        <button class="button" type="submit">Envoyer *</button>
+        <button class="button pointer" type="submit">Envoyer *</button>
       </form>
 
       <div class="details">
@@ -82,4 +80,4 @@
     </section>
   </div>
 </div>
-<app-loader [booleanVisibilityInLoarder]="isLoaderVisible"></app-loader>
+<app-loader [booleanVisibilityInLoarder]="isLoaderVisible" />

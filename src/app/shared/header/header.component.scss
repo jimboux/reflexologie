@@ -1,3 +1,5 @@
+@import "src/app/scss/variable.scss";
+
 .header-container {
   display: flex;
   align-items: center;
@@ -25,7 +27,7 @@ i {
   font-size: 1.4em;
   display: block;
 }
-.burger-icone-container{
+.burger-icone-container {
   z-index: 2;
 }
 .p1 {
@@ -35,7 +37,7 @@ i {
 nav div{
   cursor: pointer;
 }
-nav div:hover{
+nav div:hover {
   color: whitesmoke;
   transition: 0.3s;
 }
@@ -56,7 +58,7 @@ nav div:hover{
   z-index: 1;
   border-bottom-left-radius: 10px;
 }
-.invisible{
+.invisible {
   right: -50vw;
 }
 .p3, .p2 {
@@ -64,7 +66,7 @@ nav div:hover{
     margin-top: 10px;
     display: none;
   }
-  .sous-menu{
+  .sous-menu {
     position: fixed;
     background-color: #2da080;
     padding: 10px;
@@ -93,8 +95,12 @@ nav div:hover{
     display: block;
   font-size: 1rem;
   }
-  .header-container, img {
+  .header-container {
     height: 15vh;
+  }
+  img {
+    height: 13vh;
+    padding: $normal-padding
   }
   .visible{
     height: 79vh;
@@ -119,9 +125,6 @@ nav div:hover{
     width: 50%;
     height: auto;
     padding-top: 0;
-  }
-  .p-header{
-    height: 100%;
   }
 
 }
