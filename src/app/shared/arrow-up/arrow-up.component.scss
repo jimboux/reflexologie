@@ -1,3 +1,5 @@
+@import "src/app/scss/variable.scss";
+
 @media screen and (min-width: 1200px) {.arrow {
   position: fixed;
   bottom: 30px;
@@ -7,7 +9,7 @@
   border: none;
   outline: none;
   background-color: whitesmoke;
-  color: #2da080;
+  color: $green;
   cursor: pointer;
   padding: 5px;
   border-radius: 4px;
@@ -15,7 +17,7 @@
 }
 
 .arrow:hover {
-  background-color: #2da080;
+  background-color: $green;
   color: whitesmoke;
 }
 

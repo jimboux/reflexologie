@@ -16,8 +16,10 @@ export class CarouselComponent implements OnInit {
   @Input() images: carouselImage[] = [];
   @Input() indicators = true;
   @Input() controls = true;
-  @Input() autoSlide = false;
-  @Input() slideInterval = 4000;
+  @Input() autoSlide = true;
+  slideInterval = 4000;
+  autoSlideRef: any;
+
   ngOnInit(): void {
     if (this.autoSlide) {
       this.autoSlideImages();
@@ -25,8 +27,8 @@ export class CarouselComponent implements OnInit {
   }
 
   autoSlideImages(): void {
-    setInterval(() => {
-      this.onNextClick();
+   this.autoSlideRef = setInterval(() => {
+      this.slide();      
     }, this.slideInterval);
   }
 
@@ -38,11 +40,25 @@ export class CarouselComponent implements OnInit {
     this.selectedIndex === 0
       ? (this.selectedIndex = this.images.length - 1)
       : this.selectedIndex--;
+    this.resetAutoSlide()
+      
   }
 
   onNextClick(): void {
     this.selectedIndex === this.images.length - 1
       ? (this.selectedIndex = 0)
       : this.selectedIndex++;
+    this.resetAutoSlide()
+  }
+
+  slide(): void {
+    this.selectedIndex === this.images.length - 1
+      ? (this.selectedIndex = 0)
+      : this.selectedIndex++;
+  }
+
+  resetAutoSlide(): void {
+    clearInterval(this.autoSlideRef);
+    this.autoSlideImages()    
   }
 }

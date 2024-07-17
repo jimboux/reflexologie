@@ -10,7 +10,7 @@ h2 {
   font-family: "Great Vibes", cursive;
   letter-spacing: 0.05em;
   font-size: 3.5rem;
-  color: var(--main-color);
+  color: $green;
   text-shadow: #000000 2px 1px
 }
 .apropos-container {
@@ -38,7 +38,7 @@ img {
 }
 span {
   text-decoration: underline;
-  text-decoration-color: var(--main-color);
+  text-decoration-color: $green;
   text-decoration-thickness: 2px;
 }
 .reiki {

@@ -1,3 +1,5 @@
+@import "src/app/scss/variable.scss";
+
 h2{
   display: flex;
   text-align: center;
@@ -21,7 +23,7 @@ table {
     margin-bottom: 20px;
 }
 thead{
-  background-color: var(--main-color);
+  background-color: $green;
   color: whitesmoke;
   padding: 3px;
   border: 1px solid black;
@@ -94,7 +96,7 @@ img{
   }
   .imgage-container-1 img, .imgage-container-2 img{
     width: 55%;
-    filter: drop-shadow(0 0 30px var(--main-color));
+    filter: drop-shadow(0 0 30px $green);
   }
 
 
@@ -103,12 +105,12 @@ img{
   .imgage-container-1 img{
     height: 400px;
     // height: 35vh;
-    filter: drop-shadow(0 0 30px var(--main-color));
+    filter: drop-shadow(0 0 30px $green);
     border-radius: 16px;
   }
   .imgage-container-2 img{
     width: 30%;
-    filter: drop-shadow(0 0 30px var(--main-color));
+    filter: drop-shadow(0 0 30px $green);
   }
 
   table {

@@ -15,6 +15,5 @@ export class ArrowUpComponent {
   @HostListener('window:scroll', [])
     onScroll(): void {
       this.scrollPosition = window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop || 0;
-      console.log(this.scrollPosition);
     }
 }

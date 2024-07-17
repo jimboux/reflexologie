@@ -16,6 +16,8 @@ $normal-margin: 8px;
 $double-margin: 2 * $normal-margin;
 $triple-margin: 3 * $normal-margin;
 $quadruple-margin: 4 * $normal-margin;
+$half-margin: calc($normal-margin / 2);
+
 
 // ----- font-size -----
 $ssm-font-size: 10px;

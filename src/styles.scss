@@ -1,13 +1,13 @@
-@import "../src/app/scss/variable.scss";
+@import "src/app/scss/variable.scss";
 
 
-$main-color: #2da080;
+$main-color: $green;
 
 :root {
   --padding-mobile: 0 8vw 20vh 8vw;
   --padding-tablet: 0 8vw 25vh 8vw;
   --padding-pc: 0 20vw 30vh 20vw;
-  --main-color: #2da080;
+  --main-color: $green;
 }
 
 * {
@@ -136,6 +136,10 @@ $main-color: #2da080;
   width: 100%;
 }
 
+.text-align {
+  text-align: center;
+}
+
 .pointer {
   cursor: pointer;
 }
@@ -152,7 +156,6 @@ img {
   object-fit: contain;
 }
 
-
 .padding {
   padding: var(--padding-mobile);
 }
@@ -161,15 +164,18 @@ p {
   font-size: 1rem;
   font-family: "Poppins", sans-serif;
 }
-h2, h3 {
-   font-family: "Great Vibes", cursive;
-   letter-spacing: 0.0725em;
-}
+
 h2 {
+  font-family: "Great Vibes", cursive;
   font-size: 2.8rem;
+  letter-spacing: 0.0725em;
+  text-shadow: $green 1px 1px
 }
+
 h3 {
+  font-family: "Great Vibes", cursive;
   font-size: 1.8rem;
+  letter-spacing: 0.0725em;
 }
 h4 {
   font-size: 1.4rem;
