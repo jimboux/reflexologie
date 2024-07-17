@@ -1,15 +1,17 @@
+@import "src/app/scss/variable.scss";
+
 .carousel-container {
   position: relative;
   margin: auto;
   text-align: center;
   width: 84vw;
-  border-radius: 15px;
-  box-shadow: 0 8px 16px var(--main-color);
+  border-radius: 16px;
+  box-shadow: 0 8px 16px $green;
 }
 
 .carousel-container img {
   display: none;
-  border-radius: 15px;
+  border-radius: 16px;
 }
 
 .carousel-container img.image-active {
@@ -73,8 +75,6 @@
   text-align: center;
   background: 0 0;
   border: 0;
-  cursor: pointer;
-
 }
 
 .btn-prev {
@@ -99,16 +99,14 @@
 
 .icon-prev, .icon-next {
   font-size: 35px;
-  // cursor: pointer;
 }
 
 
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-@media screen and (min-width: 600px) {
-}
+
 @media screen and (min-width: 1200px) {
   .carousel-container {
-    width: 35vw;
+    width: 660px;
   }
 }

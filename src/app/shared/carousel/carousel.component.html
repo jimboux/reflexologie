@@ -23,17 +23,15 @@
     @if (controls) {
       <button
         class="btn-carousel btn-prev"
-        (click)="onPrevClick()"
         >
-        <i class="fas fa-arrow-circle-left icon-carousel icon-prev"></i>
+        <i (click)="onPrevClick()" class="fas fa-arrow-circle-left icon-carousel icon-prev pointer"></i>
       </button>
     }
     @if (controls) {
       <button
         class="btn-carousel btn-next"
-        (click)="onNextClick()"
         >
-        <i class="fas fa-arrow-circle-right icon-carousel icon-next"></i>
+        <i (click)="onNextClick()" class="fas fa-arrow-circle-right icon-carousel icon-next pointer"></i>
       </button>
     }
   </div>

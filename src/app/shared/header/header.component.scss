@@ -5,7 +5,7 @@
   align-items: center;
   justify-content: space-between;
   height: 10vh;
-  background-color: #2da080;
+  background-color: $green;
   font-family: "Poppins";
   font-weight: 600;
 }
@@ -50,7 +50,7 @@ nav div:hover {
   right: 0;
   width: 50vw;
   height: 60vh;
-  background-color:#2da080; 
+  background-color:$green; 
   transition: right 1s;
   align-items: center;
   justify-content: space-evenly;
@@ -68,7 +68,7 @@ nav div:hover {
   }
   .sous-menu {
     position: fixed;
-    background-color: #2da080;
+    background-color: $green;
     padding: 10px;
     border: 1px solid black;
   }

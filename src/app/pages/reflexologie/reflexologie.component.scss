@@ -1,33 +1,34 @@
+@import "src/app/scss/variable.scss";
+
 h2 {
-  padding: 10% 0 10% 0;
   text-align: center;
+  padding-top: calc(2* $triple-padding);
+
 }
 
 h3 {
   text-align: center;
-  padding: 8% 0;
-
+  padding: $quadruple-padding 0 $normal-padding 0;
 }
 
 span {
-  color: black;
-  font-size: 1,1rem;
+  color: $black;
   font-weight: 600;
 }
 
 img {
   display: block;
   width: 84vw;
-  border-radius: 10px;
-  padding-bottom: 5vw;
+  border-radius: 8px;
+  margin-bottom: $double-margin;
 }
 
 .erve {
-  padding-top: 5vw;
+  margin-top: $double-margin;
 }
 
 .filter {
-  filter: drop-shadow(0 0 8px var(--main-color));
+  filter: drop-shadow(0 0 8px $green);
 }
 
 i {
@@ -35,63 +36,49 @@ i {
 }
 
 .Fitzgerald {
-  width: 40vw;
-  margin: auto;
+  width: 160px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .plantaire {
   border-radius: 50%;
 }
 
-
-
-
-
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-
-
 @media screen and (min-width: 600px) {
-  img{
-    margin: auto;
-  }
-  .img-to-reduce{
-    width: 35vw;
-  }
+img {
+  width: 400px;
+  margin: $normal-margin auto $double-margin auto;
 }
+.Fitzgerald, .cancer-icon, .final-logo {
+  width: 200px;
+}
+.inca, .erve, .palmaire, .family {
+  width: 600px;
+}
+}
+
+
 @media screen and (min-width: 1200px) {
   ul {
     font-size: 1.3rem;
   }
-  h2 {
-    padding: 5% 0 2% 0;
-  }
-  h3 {
-    padding: 3% 0 3% 0;
-  }
-  h3 {
-    padding: 3% 0 2% 0;
-  }
+ 
   span {
     color: black;
     font-weight: 600;
   }
-  
+
   img {
-    width: 60vw;
-    max-width: 1200px;
-    }
-  .filter {
-    filter: drop-shadow(0 0 20px var(--main-color));
-  
+    width: 500px;
+    margin: $normal-margin auto $double-margin auto;
   }
-  .img-to-reduce{
-    width: 25vw;
+  .Fitzgerald, .cancer-icon, .final-logo {
+    width: 250px;
   }
-  .Fitzgerald{
-    width: 20vw;
-  }
-  .plantaire {
-    width: 30%;
+  .inca, .erve, .palmaire, .family {
+    width: 700px;
   }
 }

@@ -1,6 +1,5 @@
 import { Component } from '@angular/core';
-import { NavigationEnd, Router } from '@angular/router';
-import { filter } from 'rxjs';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -23,7 +22,6 @@ export class HeaderComponent {
   
   showMenu() {
     this.showSubMenu = !this.showSubMenu;
-    console.log(this.showSubMenu);
   }
 
   burgerToggle() {
