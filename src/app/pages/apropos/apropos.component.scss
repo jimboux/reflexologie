@@ -1,18 +1,21 @@
 @import "src/app/scss/variable.scss";
 
-.h2-celine-img {
-  display: flex;
+.h1-celine-img {
   flex-direction: column-reverse;
 }
-h2 {
-  padding: 10% 0;
-  text-align: center;
+
+h1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: "Great Vibes", cursive;
   letter-spacing: 0.05em;
+  margin: $triple-margin 0;
   font-size: 3.5rem;
   color: $green;
   text-shadow: #000000 2px 1px
 }
+
 .apropos-container {
   display: flex;
   flex-direction: column;
@@ -48,9 +51,9 @@ span {
 //////////////////////////////MEDIA QUERY//////////////////////////////////
 
 @media screen and (min-width: 600px) {
-  h2 {
-    padding: 10% 0 5% 0;
+  h1 {
     letter-spacing: 0.1em;
+    margin: $quadruple-margin 0;
     font-size: 5rem;
   }
   .celine {
@@ -67,11 +70,11 @@ span {
   }
 }
 @media screen and (min-width: 1200px) {
-  .h2-celine-img {
+  .h1-celine-img {
     flex-direction: row;
     padding: 5% 0 5% 0;
   }
-  h2 {
+  h1 {
     width: 100%;
     padding: 0;
   }

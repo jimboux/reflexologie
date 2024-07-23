@@ -1,28 +1,27 @@
 @import "src/app/scss/variable.scss";
 
-@media screen and (min-width: 1200px) {.arrow {
+@media screen and (min-width: 1200px) {
+.arrow {
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 32px;
+  right: 32px;
   display: none;
-  font-size: 30px;
-  border: none;
+  font-size: $xl-font-size;
   outline: none;
-  background-color: whitesmoke;
+  background-color: $white;
   color: $green;
-  cursor: pointer;
-  padding: 5px;
-  border-radius: 4px;
+  padding: $half-padding $normal-padding;
+  border-radius: 50px;
   z-index: 3;
 }
 
 .arrow:hover {
   background-color: $green;
-  color: whitesmoke;
+  color: white;
 }
 
 /* Afficher le bouton lorsque le scroll est supérieur à 600px */
 .show {
   display: block;
-}
+  }
 }
