@@ -1,15 +1,15 @@
-<div class="padding seances-container">
+<div class="padding">
   <app-title [title]="'Les Séances'"/>
-  <div class="imgage-container-1">
+  <div class="imgage-container flex center space-around">
     <img
       src="../../../assets//seances/massage1.jpeg"
       loading="lazy"
       alt="photo d'un massage de pied"
     />
-    <img class="image-to-desktop" src="../../../assets/seances/massage4.jpeg" alt="photo de massage de pied">
+    <img class="desktop-only" src="../../../assets/seances/massage4.jpeg" alt="photo de massage de pied">
   </div>
 
-  <h3>Déroulement d'une séance</h3>
+  <h2>Déroulement d'une séance</h2>
   <p>
     Un pantalon ample est conseillé pour votre confort et celui du réflexologue.
     Nous évoquerons ensemble là où les raison de votre visite pour établir un
@@ -31,14 +31,13 @@
     liste des recommandations vous sera remise pour optimiser les effets
     bénéfiques du soin.
   </p>
-  <div class="imgage-container-2">
-    <img
+    <img 
+      class="img-2 flex"
       src="../../../assets/seances/massage5.jpeg"
       loading="lazy"
       alt="photo d'un massage de pied"
     />
-  </div>
-  <h3>Nombre de séances</h3>
+  <h2>Nombre de séances</h2>
   <p>
     En fonction de la profondeur du dysfonctionnement, les résultats peuvent
     être immédiat ou nécessiter plusieurs séance. Il est recommandé de suivre le
@@ -47,7 +46,6 @@
   </p>
 
   <table>
-    <!-- <caption>titre du tableau</caption> -->
     <thead>
       <tr>
         <th>Séances</th>
@@ -89,25 +87,21 @@
     de réflexologie réalisés au-delà de 10 kilomètres de mon domicile.
   </p>
   <div>
-    <h3>Carte cadeau</h3>
-    <p>
-      Envie d'offrir un moment de détente et de relaxation profonde? <br> Prendre
+    <h2>Carte cadeau</h2>
+    <p class="text-align">
+      Envie d'offrir un moment de détente et de relaxation profonde ?<br> Prendre
       soin de celle et ceux que vous aimez ?
     </p>
-    <div class="gift-and-p">
-      <div class="p-for-gift">
-        <p>
-          Contactez moi par téléphone ou via le
-          <span class="formulaire-link" routerLink="/contact">formulaire</span>.
-        </p>
+    <div class="gift-and-p flex center space-between">
+      <div>
+        <p>Contactez moi par téléphone ou via le <span class="pointer" routerLink="/contact">formulaire</span>.</p>
         <p>Vous recevrez votre bon cadeau par mail.</p>
       </div>
-
       <img routerLink="/contact"
-        class="gift-image"
+        class="gift-image pointer"
         src="../../../assets/Gift card-rafiki.png"
         loading="lazy"
-        alt="image d'une femme qui porte un cadeau géant"
+        alt="image d'une femme qui porte une enveloppe géante"
       />
     </div>
   </div>
