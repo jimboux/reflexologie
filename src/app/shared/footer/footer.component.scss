@@ -5,166 +5,140 @@
   bottom: 0;
   width: 100%;
 }
+
 .footer-upper {
-  height: 10vh;
   background-color: #e9f5f9;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
+
 img {
-  width: 10vh;
+  height: 120px;
+  margin: $normal-margin;
 }
-.footer-upper-p,
-.follow {
+
+.footer-upper-p-container {
   display: none;
 }
 
 ul {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 5px;
+  align-items: flex-start;
+  gap: 12px;
 }
+
 .mailto {
   color: $green;
-  font-weight: 800;
-  font-size: 0.82rem;
-  cursor: pointer;
+  font-weight: 900;
+  font-size: $xsm-font-size;
+  word-break: break-word
 }
+
 .follow-me-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 12px;
-  margin-right: 5%;
+  margin: $normal-margin;
 }
+
 .follow-me-container i {
-  cursor: pointer;
+  margin: $normal-margin;
+  font-size: $xxl-font-size;
   color: black;
 }
-.fa-instagram,
-.fa-facebook {
-  font-size: 1.7rem;
+
+i {
+  margin-right: $normal-margin;
 }
 
 .footer-bottom {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-  height: 6vh;
   background-color: $green;
   font-weight: 600;
+  padding: $normal-padding;
+}
 
-}
 .footer-bottom p {
-  font-size: 0.8rem;
+  font-size: $xsm-font-size;
+  text-align: center;
 }
-i {
-  margin-right: 8px;
-}
+
 .footer-bottom a {
   color: black;
   cursor: pointer;
 }
+
 .fa-envelope {
   display: none;
 }
 
 //////////////////////////////MEDIA QUERY//////////////////////////////////
+
 @media screen and (max-width: 350px) {
   .footer-upper {
     display: none;
   }
 }
+
 @media screen and (min-width: 600px) {
   .mailto {
-    color: $green;
-    font-size: small;
-    margin-left: 8px;
+    font-size: $lg-font-size;
   }
+
   .footer-upper {
     justify-content: space-around;
   }
-  .mailto {
-    font-size: medium;
-  }
-  .footer-upper {
-    height: 15vh;
-  }
+
   img {
-    width: 15vh;
+    height: 200px;
   }
-  .follow-me-container {
-    font-size: large;
-    gap: 24px;
-  }
+
   i {
-    font-size: 1.3rem;
-  }
-  .fa-instagram,
-  .fa-facebook {
-    font-size: 2.9rem;
-  }
-  .footer-bottom {
-    font-size: medium;
-  }
-  ul {
-    font-size: medium;
-  }
-  p {
-    font-size: 1rem;
+    font-size: $xxl-font-size;
   }
 
   .fa-envelope {
-    display: inline;
+    display: inline-block;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .footer-upper {
-    height: 20vh;
-  }
-  img {
-    width: 20vh;
-  }
-  .footer-upper {
-    justify-content: space-between;
-  }
-  .footer-upper-p,
-  .follow {
+
+  .footer-upper-p-container {
     display: block;
+    p {
+      text-align: center;
+    margin-top: $normal-margin;
+    }
   }
 
   ul {
     flex-direction: row;
     justify-content: space-between;
-    font-size: medium;
-    align-items: flex-end;
+    margin-top: $quadruple-margin;
   }
 
   ul li:nth-child(2) {
     order: 1;
   }
-  .footer-upper-p {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 5px;
+
+  ul li {
+    font-size: $l-font-size;
+    font-weight: 600;
   }
-  i {
-    font-size: 2rem;
+
+  .follow-me-container i {
+    margin: $quadruple-margin;
+    font-size: calc(2* $xl-font-size);
   }
 
   .follow-me-container i:hover {
     color: $green;
-    scale: 1.5;
-    transition: 0.5s;
+    scale: 1.1;
+    transition: 0.2s;
   }
-  .footer-upper-p-container {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+
+  .footer-bottom {
+    p {
+      font-size: $lg-font-size;
+    }
   }
 }
