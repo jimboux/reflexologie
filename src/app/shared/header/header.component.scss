@@ -1,42 +1,42 @@
 @import "src/app/scss/variable.scss";
 
 .header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 10vh;
   background-color: $green;
-  font-family: "Poppins";
-  font-weight: 600;
 }
+
 .logo-p-header-container {
-  display: flex;
-  align-items: center;
-  z-index: 2;
+  z-index: 2;//passe devant le menu burger déroulé
 }
+
 img {
-  height: 10vh;
-  object-fit: contain;
+  height: 100px;
+  margin: $normal-margin;
 }
 
 i {
-  font-size: x-large;
-  margin-right: 5vw;
+  font-size: $xxl-font-size;
+  margin-right: $triple-margin;
 }
+
 .name {
-  font-size: 1.4em;
-  display: block;
+  font-size: $xl-font-size;
 }
+
 .burger-icone-container {
   z-index: 2;
 }
+
 .p1 {
-  display: block;
-  font-size: 0.8em;
+ font-size: $xsm-font-size;
 }
+
 nav div{
-  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  color: $white;
+  border-bottom: 1px solid white;
 }
+
 nav div:hover {
   color: whitesmoke;
   transition: 0.3s;
@@ -45,45 +45,26 @@ nav div:hover {
 .visible {
   display: flex;
   flex-direction: column;
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   width: 50vw;
-  height: 60vh;
+  height: 50vh;
   background-color:$green; 
   transition: right 1s;
   align-items: center;
-  justify-content: space-evenly;
-  padding-top: 5vh;
+  justify-content: space-around;
+  padding-top: 116px;
   z-index: 1;
-  border-bottom-left-radius: 10px;
+  border-bottom-left-radius: 8px;
 }
 .invisible {
   right: -50vw;
 }
-.p3, .p2 {
-    margin-left: 20px;
-    margin-top: 10px;
-    display: none;
-  }
-  .sous-menu {
-    position: fixed;
-    background-color: $green;
-    padding: 10px;
-    border: 1px solid black;
-  }
-  .sous-menu li a {
-  color: black;
-  }
-  .sous-menu li {
-   margin: 10px 0 10px 0;
-    }
-  .sous-menu li:hover a {
-    color: white;
-    transition: 0.3s;
-    cursor: pointer;
-  }
 
+.p3, .p2 {
+  display: none;
+}
 
 
 //////////////////////////////MEDIA QUERY//////////////////////////////////
@@ -91,9 +72,8 @@ nav div:hover {
 @media screen and (min-width: 600px) {
   .p1, .p3, .p2 {
     margin-left: 20px;
-    // margin-top: 10px;
     display: block;
-  font-size: 1rem;
+    font-size: 1rem;
   }
   .header-container {
     height: 15vh;
@@ -102,9 +82,9 @@ nav div:hover {
     height: 13vh;
     padding: $normal-padding
   }
-  .visible{
-    height: 79vh;
-    padding-top: 15vh;
+  .visible {
+    padding-top: 186.75px;
+    border-bottom-left-radius: 16px;
   }
   nav div{
   font-size: 1.5rem;
@@ -116,15 +96,16 @@ nav div:hover {
     display: none;
   }
   .visible {
-    display: flex;
     flex-direction: row;
     position: static;
     margin-right: 3%;
     gap: 3%;
-    z-index: 1;
     width: 50%;
     height: auto;
     padding-top: 0;
   }
-
+  nav div{
+    cursor: pointer;
+    border-bottom: none;
+  }
 }
