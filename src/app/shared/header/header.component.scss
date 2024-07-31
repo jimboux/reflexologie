@@ -33,13 +33,7 @@ i {
 nav div{
   font-weight: 600;
   letter-spacing: 0.08em;
-  color: $white;
   border-bottom: 1px solid white;
-}
-
-nav div:hover {
-  color: whitesmoke;
-  transition: 0.3s;
 }
 
 .visible {
@@ -107,5 +101,12 @@ nav div:hover {
   nav div{
     cursor: pointer;
     border-bottom: none;
+  }
+  nav div:hover {
+    color: $white;  
+  }
+  nav div.active {
+    color: $white;
+    border-bottom: 2px solid $white;
   }
 }

@@ -13,11 +13,11 @@
     </div>
   </div>
   <nav [ngClass]="burgerVisible ? 'visible invisible' : 'visible'">
-    <div (click)="burgerToggle()" [routerLink]="['accueil']">Accueil</div>
-    <div (click)="burgerToggle()" [routerLink]="['reflexologie']">La réflexologie</div>
-    <div (click)="burgerToggle()" [routerLink]="['a-propos']">A propos</div>
-    <div (click)="burgerToggle()" [routerLink]="['seances']">Séances</div>
-    <div (click)="burgerToggle()" [routerLink]="['contact']">Contact</div>
+    <div (click)="burgerToggle()" [routerLinkActive]="['active']" [routerLink]="['accueil']">Accueil</div>
+    <div (click)="burgerToggle()" [routerLinkActive]="['active']" [routerLink]="['reflexologie']">La réflexologie</div>
+    <div (click)="burgerToggle()" [routerLinkActive]="['active']" [routerLink]="['a-propos']">A propos</div>
+    <div (click)="burgerToggle()" [routerLinkActive]="['active']" [routerLink]="['seances']">Séances</div>
+    <div (click)="burgerToggle()" [routerLinkActive]="['active']" [routerLink]="['contact']">Contact</div>
   </nav>
   <div class="burger-icone-container" (click)="burgerToggle()">
     <i [ngClass]="burgerVisible ? 'fa-solid fa-bars' : 'fa-solid fa-xmark'"></i>
