@@ -1,5 +1,5 @@
-<header class="header-container">
-  <div class="logo-p-header-container">
+<header class="header-container flex center space-between">
+  <div class="logo-p-header-container flex center">
     <img
       [routerLink]="['accueil']"
       src="./assets/logo/header2.png"
@@ -12,36 +12,12 @@
       <P class="p3">certifiée palmaire & plantaire</P>
     </div>
   </div>
-  <nav
-    [ngClass]="burgerVisible ? 'visible invisible' : 'visible'"
-    >
-    <div [routerLink]="['accueil']">Accueil</div>
-    <div
-      (mouseenter)="showMenu()"
-      (mouseleave)="showMenu()"
-      [routerLink]="['reflexologie']"
-      >
-      La réflexologie
-      @if (showSubMenu) {
-        <ul class="sous-menu">
-          <li><a href="/reflexologie#presentation">Présentation générale</a></li>
-          <li>
-            <a href="/reflexologie#qui">Pour qui ? </a>
-          </li>
-          <!-- <li>
-          <a href="/reflexologie#contrindication">Les contre indications</a>
-        </li> -->
-        <li>
-          <a [routerLink]="['reflexologie']" fragment="contrindication"
-            >Les contre indications</a
-            >
-          </li>
-        </ul>
-      }
-    </div>
-    <div [routerLink]="['a-propos']">A propos</div>
-    <div [routerLink]="['seances']">Séances</div>
-    <div [routerLink]="['contact']">Contact</div>
+  <nav [ngClass]="burgerVisible ? 'visible invisible' : 'visible'">
+    <div (click)="burgerToggle()" [routerLinkActive]="['active']" [routerLink]="['accueil']">Accueil</div>
+    <div (click)="burgerToggle()" [routerLinkActive]="['active']" [routerLink]="['reflexologie']">La réflexologie</div>
+    <div (click)="burgerToggle()" [routerLinkActive]="['active']" [routerLink]="['a-propos']">A propos</div>
+    <div (click)="burgerToggle()" [routerLinkActive]="['active']" [routerLink]="['seances']">Séances</div>
+    <div (click)="burgerToggle()" [routerLinkActive]="['active']" [routerLink]="['contact']">Contact</div>
   </nav>
   <div class="burger-icone-container" (click)="burgerToggle()">
     <i [ngClass]="burgerVisible ? 'fa-solid fa-bars' : 'fa-solid fa-xmark'"></i>

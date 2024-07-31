@@ -10,7 +10,7 @@
 .content-container {
   background-color: rgba(217, 217, 217, 0.8);
   border-radius: 16px;
-  margin: $double-margin 0;
+  margin: $quadruple-margin 0;
   padding: $double-padding;
 }
 
@@ -100,12 +100,23 @@ span {
   color: $black;
 }
 
+label, .coordo {
+  font-weight: 600;
+}
+
 ////////////////////////////////MEDIA QUERY///////////
 
 @media screen and (min-width: 600px) {
+  .content-container {
+  margin: calc(4* $quadruple-margin)  0;
+
+  }
+  
   fieldset {
     width: 80%;
   }
+
+
  
   .button {
     margin-top: 20px;
