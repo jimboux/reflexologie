@@ -23,7 +23,8 @@ const routes: Routes = [
   { path: 'seances', component: SeancesComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'politique-confidentialite', component: ConfidentialPoliticComponent },
-  { path: '**', component: Page404Component },
+  { path: 'page-404', component: Page404Component },
+  { path: '**', redirectTo: 'page-404' },
 ];
 
 @NgModule({

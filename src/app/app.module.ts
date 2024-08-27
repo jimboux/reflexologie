@@ -17,8 +17,8 @@ import { Page404Component } from './pages/page404/page404.component';
 import { CarouselComponent } from './shared/carousel/carousel.component';
 import { ArrowUpComponent } from './shared/arrow-up/arrow-up.component';
 import { FormSentComponent } from './pages/form-sent/form-sent.component';
-import { LoaderComponent } from './shared/loader/loader.component';
-import { TitleComponent } from './shared/title/title.component';
+import { TitleComponent } from './shared/title/title.component'
+
 
 @NgModule({
   declarations: [
@@ -37,7 +37,6 @@ import { TitleComponent } from './shared/title/title.component';
     CarouselComponent,
     ArrowUpComponent,
     FormSentComponent,
-    LoaderComponent
   ],
   imports: [
     BrowserModule,
