@@ -11,29 +11,29 @@
         <input type="hidden" name="_captcha" value="false">
         <input type="text" name="_honey" style="display:none">
         <input type="hidden" name="_subject" value="Nouveau message du site l'art de la réflexologie">
-        <input type="hidden" name="_next" value="http://localhost:4200/formulaire-envoyé">
+        <input type="hidden" name="_next" value="https://lart-reflexologie.netlify.app//formulaire-envoyé">
 
         <fieldset>
           <label for="name">Votre nom * : </label>
-          <input type="text" name="name" placeholder="Tapez votre nom ici" autocomplete="off" required/>
+          <input (keyup)="onValueChange($event, 'name')" type="text" name="name" placeholder="Tapez votre nom ici" autocomplete="off" required/>
         </fieldset>
 
         <fieldset>
           <label for="email">Email * : </label>
-          <input type="email" name="email" placeholder="Tapez votre email ici" required/>
+          <input (keyup)="onValueChange($event, 'mail')" type="email" name="email" placeholder="Tapez votre email ici" autocomplete="off" required/>
         </fieldset>
 
         <fieldset>
-          <label for="subject">Sujet : </label>
-          <input type="text" name="subject" autocomplete="off" placeholder="ex : Demande de RDV" />
+          <label for="subject">Sujet * : </label>
+          <input type="text" name="subject" autocomplete="off" placeholder="ex : Demande de RDV" required/>
         </fieldset>
 
         <fieldset class="text-area">
-          <label for="message">Votre message : </label>
+          <label for="message">Votre message * : </label>
           <textarea name="message"></textarea>
         </fieldset>
 
-        <button class="button pointer" type="submit">Envoyer *</button>
+        <button class="button pointer" type="submit" (click)="onSubmit()">Envoyer *</button>
       </form>
 
       <div class="details">
@@ -80,4 +80,23 @@
     </section>
   </div>
 </div>
-<app-loader [booleanVisibilityInLoarder]="isLoaderVisible" />
+@if (isLoaderVisible) {
+  <div class="modal-loader flex center column">
+    <p>Formulaire en cours d'envoi</p>
+    <p class="p2">Cela peut prendre quelques secondes</p>
+    <div class="loader">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+      <div class="bar4"></div>
+      <div class="bar5"></div>
+      <div class="bar6"></div>
+      <div class="bar7"></div>
+      <div class="bar8"></div>
+      <div class="bar9"></div>
+      <div class="bar10"></div>
+      <div class="bar11"></div>
+      <div class="bar12"></div>
+    </div>
+  </div>
+}
