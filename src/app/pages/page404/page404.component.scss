@@ -3,13 +3,16 @@
 img {
   width: 100%;
 }
+
 .page-404-container {
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-  justify-content: space-between;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
   align-items: center;
-  gap: 90px;
+  background-color: white;
+  z-index: 2;
 }
 .button {
   appearance: none;
@@ -55,18 +58,10 @@ img {
 //////////////////////////////MEDIA QUERY//////////////////////////////////
 
 @media screen and (min-width: 600px) {
-  img {
-    width: 350px;
-  }
-  .page-404-container {
-    gap: 120px;
-  }
 }
+
 @media screen and (min-width: 1200px) {
   img {
-    max-width: 350px;
-  }
-  .page-404-container {
-    gap: 0px;
+    max-width: 550px;
   }
 }
