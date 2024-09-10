@@ -30,7 +30,7 @@ i {
  font-size: $xsm-font-size;
 }
 
-nav div{
+nav div {
   font-weight: 600;
   letter-spacing: 0.08em;
   border-bottom: 1px solid white;
@@ -52,6 +52,7 @@ nav div{
   z-index: 1;
   border-bottom-left-radius: 8px;
 }
+
 .invisible {
   right: -50vw;
 }
@@ -64,31 +65,37 @@ nav div{
 //////////////////////////////MEDIA QUERY//////////////////////////////////
 
 @media screen and (min-width: 600px) {
-  .p1, .p3, .p2 {
-    margin-left: 20px;
-    display: block;
-    font-size: 1rem;
-  }
+
   .header-container {
     height: 15vh;
   }
+
   img {
     height: 13vh;
     padding: $normal-padding
   }
+
   .visible {
     padding-top: 186.75px;
     border-bottom-left-radius: 16px;
   }
+
   nav div{
   font-size: 1.5rem;
 }
 
 }
 @media screen and (min-width: 1200px) {
+  .p1, .p3, .p2 {
+    margin-left: 20px;
+    display: block;
+    font-size: 1rem;
+  }
+
   .burger-icone-container {
     display: none;
   }
+
   .visible {
     flex-direction: row;
     position: static;
@@ -98,15 +105,24 @@ nav div{
     height: auto;
     padding-top: 0;
   }
+
   nav div{
     cursor: pointer;
     border-bottom: none;
   }
+
   nav div:hover {
     color: $white;  
   }
+
   nav div.active {
     color: $white;
     border-bottom: 2px solid $white;
+  }
+}
+
+@media screen and (max-height: 700px) {
+  .p3, .p2 {
+    display: none;
   }
 }

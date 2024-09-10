@@ -33,7 +33,7 @@ ul {
   color: $green;
   font-weight: 900;
   font-size: $xsm-font-size;
-  word-break: break-word
+  word-break: break-word;
 }
 
 .follow-me-container {
@@ -101,12 +101,11 @@ i {
 }
 
 @media screen and (min-width: 1200px) {
-
   .footer-upper-p-container {
     display: block;
     p {
       text-align: center;
-    margin-top: $normal-margin;
+      margin-top: $normal-margin;
     }
   }
 
@@ -127,7 +126,7 @@ i {
 
   .follow-me-container i {
     margin: $quadruple-margin;
-    font-size: calc(2* $xl-font-size);
+    font-size: calc(2 * $xl-font-size);
   }
 
   .follow-me-container i:hover {

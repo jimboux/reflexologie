@@ -1,31 +1,63 @@
 <div class="padding contact-container flex center">
   <div class="content-container">
     <section class="flex column center">
-      <app-title [title]="'Contactez-moi'"/>
-        <p>Merci de compléter ce formulaire pour prendre rendez vous.</p>
-        <p>Je reste disponible pour répondre à vos questions.</p>
+      <app-title [title]="'Contactez-moi'" />
+      <p>Merci de compléter ce formulaire pour prendre rendez vous.</p>
+      <p>Je reste disponible pour répondre à vos questions.</p>
     </section>
 
     <section class="content-container-body">
-     <form action="https://formsubmit.co/cmoreira.lart.reflexologie@gmail.com" method="POST" class="flex column center">
-        <input type="hidden" name="_captcha" value="false">
-        <input type="text" name="_honey" style="display:none">
-        <input type="hidden" name="_subject" value="Nouveau message du site l'art de la réflexologie">
-        <input type="hidden" name="_next" value="https://lart-reflexologie.netlify.app//formulaire-envoyé">
+      <form
+        action="https://formsubmit.co/cmoreira.lart.reflexologie@gmail.com"
+        method="POST"
+        class="flex column center"
+      >
+        <input type="hidden" name="_captcha" value="false" />
+        <input type="text" name="_honey" style="display: none" />
+        <input
+          type="hidden"
+          name="_subject"
+          value="Nouveau message du site l'art de la réflexologie"
+        />
+        <input
+          type="hidden"
+          name="_next"
+          value="https://lart-reflexologie.netlify.app//formulaire-envoyé"
+        />
 
         <fieldset>
           <label for="name">Votre nom * : </label>
-          <input (keyup)="onValueChange($event, 'name')" type="text" name="name" placeholder="Tapez votre nom ici" autocomplete="off" required/>
+          <input
+            (keyup)="onValueChange($event, 'name')"
+            type="text"
+            name="name"
+            placeholder="Tapez votre nom ici"
+            autocomplete="off"
+            required
+          />
         </fieldset>
 
         <fieldset>
           <label for="email">Email * : </label>
-          <input (keyup)="onValueChange($event, 'mail')" type="email" name="email" placeholder="Tapez votre email ici" autocomplete="off" required/>
+          <input
+            (keyup)="onValueChange($event, 'mail')"
+            type="email"
+            name="email"
+            placeholder="Tapez votre email ici"
+            autocomplete="off"
+            required
+          />
         </fieldset>
 
         <fieldset>
           <label for="subject">Sujet * : </label>
-          <input type="text" name="subject" autocomplete="off" placeholder="ex : Demande de RDV" required/>
+          <input
+            type="text"
+            name="subject"
+            autocomplete="off"
+            placeholder="ex : Demande de RDV"
+            required
+          />
         </fieldset>
 
         <fieldset class="text-area">
@@ -33,7 +65,9 @@
           <textarea name="message"></textarea>
         </fieldset>
 
-        <button class="button pointer" type="submit" (click)="onSubmit()">Envoyer *</button>
+        <button class="button pointer" type="submit" (click)="onSubmit()">
+          Envoyer *
+        </button>
       </form>
 
       <div class="details">
@@ -46,26 +80,29 @@
           </div>
           <div class="coordo">
             <h5>Mes coordonnées</h5>
-            <div>
-              <i class="fa-solid fa-phone">
-              </i>0650923194
-            </div>
+            <div><i class="fa-solid fa-phone"> </i>0650923194</div>
             <div>
               <i class="fa-solid fa-location-dot"></i> Villeneuve | Cher
             </div>
             <div>
               <i class="fa-regular fa-envelope"></i>
-              <a class="mailto" href="mailto:cmoreira.lart.reflexologie@gmail.com">cmoreira.lart.reflexologie&#64;gmail.com</a>
+              <a
+                class="mailto"
+                href="mailto:cmoreira.lart.reflexologie@gmail.com"
+                >cmoreira.lart.reflexologie&#64;gmail.com</a
+              >
             </div>
           </div>
         </div>
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2719.592604670975!2d2.2204254767247735!3d47.02860122771177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47faec0319801b25%3A0xcb74a5bc6a6e1b68!2s5%20Rte%20de%20Saint-Florent%2C%2018400%20Villeneuve-sur-Cher!5e0!3m2!1sfr!2sfr!4v1688457786214!5m2!1sfr!2sfr"
           loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade">
+          referrerpolicy="no-referrer-when-downgrade"
+        >
         </iframe>
         <p>
-          Rendez vous également possible dans le village de Chezal-Benoit au local des P'tites mains casalaises le samedi et dimanche.
+          Rendez vous également possible dans le village de Chezal-Benoit au
+          local des P'tites mains casalaises le samedi et dimanche.
         </p>
       </div>
     </section>
@@ -73,30 +110,33 @@
     <section class="content-container-footer">
       <p>
         * En cliquant sur <span>"Envoyer"</span>, j'accepte expressément les
-        <span routerLink="/CGU">Conditions Générales d'Utilisation</span> de Céline Moreira et je
-        comprends que les informations ci-dessus seront utilisées conformément à
-        la <span routerLink="/politique-confidentialite">Politique de confidentialité</span>.
+        <span routerLink="/CGU">Conditions Générales d'Utilisation</span> de
+        Céline Moreira et je comprends que les informations ci-dessus seront
+        utilisées conformément à la
+        <span routerLink="/politique-confidentialite"
+          >Politique de confidentialité</span
+        >.
       </p>
     </section>
   </div>
 </div>
 @if (isLoaderVisible) {
-  <div class="modal-loader flex center column">
-    <p>Formulaire en cours d'envoi</p>
-    <p class="p2">Cela peut prendre quelques secondes</p>
-    <div class="loader">
-      <div class="bar1"></div>
-      <div class="bar2"></div>
-      <div class="bar3"></div>
-      <div class="bar4"></div>
-      <div class="bar5"></div>
-      <div class="bar6"></div>
-      <div class="bar7"></div>
-      <div class="bar8"></div>
-      <div class="bar9"></div>
-      <div class="bar10"></div>
-      <div class="bar11"></div>
-      <div class="bar12"></div>
-    </div>
+<div class="modal-loader flex center column">
+  <p>Formulaire en cours d'envoi</p>
+  <p class="p2">Cela peut prendre quelques secondes</p>
+  <div class="loader">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+    <div class="bar4"></div>
+    <div class="bar5"></div>
+    <div class="bar6"></div>
+    <div class="bar7"></div>
+    <div class="bar8"></div>
+    <div class="bar9"></div>
+    <div class="bar10"></div>
+    <div class="bar11"></div>
+    <div class="bar12"></div>
   </div>
+</div>
 }

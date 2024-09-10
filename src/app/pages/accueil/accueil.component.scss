@@ -39,8 +39,6 @@ iframe {
 }
 
 .button:hover {
-  // color: $green;
-  // background-color: whitesmoke;
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   transform: translateY(-2px);
 }
@@ -66,7 +64,6 @@ iframe {
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 @media screen and (min-width: 600px) {
-
   .logo {
     width: 60vw;
   }
@@ -81,7 +78,6 @@ iframe {
 }
 
 @media screen and (min-width: 1200px) {
-
   h1 {
     font-family: "Great Vibes", cursive;
     letter-spacing: 0.08em;
@@ -113,7 +109,6 @@ iframe {
     font-size: 2rem;
   }
 
-
   .h1-images-container {
     height: 80vh;
     display: flex;
@@ -133,7 +128,6 @@ iframe {
     white-space: nowrap;
     overflow: hidden;
   }
-  
   
   .h1-images-container {
     height: 80vh;
@@ -168,5 +162,4 @@ iframe {
     transform: scale(1.05);
     transition: 0.3s;
   }
-  
 }
