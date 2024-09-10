@@ -3,7 +3,6 @@
 h2 {
   text-align: center;
   padding-top: calc(2* $triple-padding);
-
 }
 
 h3 {
@@ -52,20 +51,87 @@ ul li {
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 @media screen and (min-width: 600px) {
-img {
-  width: 400px;
-  margin: $normal-margin auto $double-margin auto;
+  img {
+    width: 400px;
+    margin: $normal-margin auto $double-margin auto;
+  }
+  .Fitzgerald, .cancer-icon, .final-logo {
+    width: 200px;
+  }
+  .inca, .erve, .palmaire, .family {
+    width: 600px;
+  }
 }
-.Fitzgerald, .cancer-icon, .final-logo {
-  width: 200px;
-}
-.inca, .erve, .palmaire, .family {
-  width: 600px;
-}
-}
-
 
 @media screen and (min-width: 1200px) {
+  :root {
+    --positionForIndicatorBar: 0%;
+  }
+
+  .tab-container {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    padding: $normal-padding
+  }
+  
+  .scroller {
+    content: "";
+    width: 16px;
+    height: 138px;
+    opacity: 0.4;
+    background: #888;
+    position: absolute;
+    top: -2px;
+    border: 0.5px solid rgba(0, 0, 0, 0.04);
+    border-radius: 7px;
+  }
+  
+  .indicator {
+    content: "";
+    width: 12px;
+    height: 28px;
+    background: $green;
+    position: absolute;
+    left: 10px;
+    z-index: 2;
+    border: 0.5px solid rgba(0, 0, 0, 0.04);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.12), 0px 3px 1px rgba(0, 0, 0, 0.04);
+    border-radius: 7px;
+    transition: all 0.2s ease-out;
+  }
+  
+  .tab_label {
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    border: 0;
+    margin-left: $triple-margin;
+  }
+
+  .tab_label a {
+    color: black;
+    font-size: $l-font-size;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .tab_label a:hover {
+    color: $green;
+    scale: 1.02;
+  }
+  .tab_label a.active {
+    font-weight: bold;
+    color: $green;
+    text-decoration: underline;
+}
+
+  
+  .indicator {
+    top: var(--positionForIndicatorBar);
+  }
+  
+  
   ul {
     font-size: 1.3rem;
   }
