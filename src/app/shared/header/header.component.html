@@ -4,7 +4,7 @@
       [routerLink]="['accueil']"
       src="./assets/logo/header2.png"
       alt="logo du site"
-      />
+    />
     <div class="p-header">
       <P class="name">Céline Moreira</P>
       <P class="p1">L'art de la réflexologie plantaire</P>
@@ -13,11 +13,41 @@
     </div>
   </div>
   <nav [ngClass]="burgerVisible ? 'visible invisible' : 'visible'">
-    <div (click)="burgerToggle()" [routerLinkActive]="['active']" [routerLink]="['accueil']">Accueil</div>
-    <div (click)="burgerToggle()" [routerLinkActive]="['active']" [routerLink]="['reflexologie']">La réflexologie</div>
-    <div (click)="burgerToggle()" [routerLinkActive]="['active']" [routerLink]="['a-propos']">A propos</div>
-    <div (click)="burgerToggle()" [routerLinkActive]="['active']" [routerLink]="['seances']">Séances</div>
-    <div (click)="burgerToggle()" [routerLinkActive]="['active']" [routerLink]="['contact']">Contact</div>
+    <div
+      (click)="burgerToggle()"
+      [routerLinkActive]="['active']"
+      [routerLink]="['accueil']"
+    >
+      Accueil
+    </div>
+    <div
+      (click)="burgerToggle()"
+      [routerLinkActive]="['active']"
+      [routerLink]="['reflexologie']"
+    >
+      La réflexologie
+    </div>
+    <div
+      (click)="burgerToggle()"
+      [routerLinkActive]="['active']"
+      [routerLink]="['a-propos']"
+    >
+      A propos
+    </div>
+    <div
+      (click)="burgerToggle()"
+      [routerLinkActive]="['active']"
+      [routerLink]="['seances']"
+    >
+      Séances
+    </div>
+    <div
+      (click)="burgerToggle()"
+      [routerLinkActive]="['active']"
+      [routerLink]="['contact']"
+    >
+      Contact
+    </div>
   </nav>
   <div class="burger-icone-container" (click)="burgerToggle()">
     <i [ngClass]="burgerVisible ? 'fa-solid fa-bars' : 'fa-solid fa-xmark'"></i>
