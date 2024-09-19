@@ -73,7 +73,9 @@ ul li {
     top: 50%;
     left: 0;
     transform: translateY(-50%);
-    padding: $normal-padding
+    padding: $normal-padding;
+    overflow: visible;
+    width: 300px
   }
   
   .scroller {
@@ -107,7 +109,8 @@ ul li {
     display: flex;
     align-items: center;
     border: 0;
-    margin-left: $triple-margin;
+    margin-left: $double-margin;
+    padding-left: calc($normal-padding / 2);
   }
 
   .tab_label a {

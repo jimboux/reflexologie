@@ -14,7 +14,12 @@
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
   text-align: justify;
-  cursor: default
+  cursor: default;
+  overflow-x: hidden;
+}
+
+.fa-solid, .fa-brands {
+  overflow: hidden;
 }
 
 /* ------ Flex Layouts ------ */
